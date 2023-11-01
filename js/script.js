@@ -167,16 +167,16 @@ if($('.profile-pic').length > 0){
 }
 // owl carousel
 $(document).ready(function(){
-    $("header .owl-carousel").owlCarousel({
-        nav: false,
-        autoplay: false,
-        autoplayHoverPause: true,
-        responsiveClass: true,
-        items: 1,
-        rtl: dirAr,
-        dots: true,
-        margin: 20
-    });
+    // $("header .owl-carousel").owlCarousel({
+    //     nav: false,
+    //     autoplay: false,
+    //     autoplayHoverPause: true,
+    //     responsiveClass: true,
+    //     items: 1,
+    //     rtl: dirAr,
+    //     dots: true,
+    //     margin: 20
+    // });
     
     $(".membership .owl-carousel").owlCarousel({
         autoplay: true,
@@ -217,26 +217,21 @@ $(document).ready(function(){
 
     $('.partners .owl-carousel').owlCarousel({
         loop:true,
-        margin:15,
-        responsiveClass:true,
+        margin:40,
+        // responsiveClass:true,
         rtl:dirAr,
-        autoplay:true,
+        // autoplay:true,
         nav:false,
         dots: false,
         responsive:{
             0:{
-                items:3,
-                margin: 8,
+                items:1,
             },
             600:{
-                items:5,
+                items:3,
             },
             1000:{
-                items:5,
-            },
-            function(){
-
-                
+                items:3,
             }
         }
     });
