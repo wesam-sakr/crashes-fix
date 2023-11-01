@@ -1,210 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Crashes FIX</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crashes FIX</title>
 
-        <link rel="icon" type="image/x-icon" href="images/logo01.svg" />
+  <link rel="icon" type="image/x-icon" href="images/logo01.svg" />
 
-        <!-- font awesome link  -->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font awesome link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <!-- Bootstrap link  -->
-        <link rel="stylesheet" href="css/plugin/bootstrap.rtl.min.css">
-        <link rel="stylesheet" href="css/plugin/bootstrap-icons.min.css">
+  <!-- Bootstrap link  -->
+  <link rel="stylesheet" href="css/plugin/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="css/plugin/bootstrap-icons.min.css">
 
-        <!-- IF LANG == EN -->
-        <!-- <link rel="stylesheet" href="css/plugin/bootstrap.min.css"> -->
-        <!-- END IF -->
+  <!-- IF LANG == EN -->
+  <!-- <link rel="stylesheet" href="css/plugin/bootstrap.min.css"> -->
+  <!-- END IF -->
 
-        <!-- carousel link  -->
-        <link rel="stylesheet" href="css/plugin/owl.carousel.min.css">
-        <link rel="stylesheet" href="css/plugin/owl.theme.default.min.css">
+  <!-- carousel link  -->
+  <link rel="stylesheet" href="css/plugin/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/plugin/owl.theme.default.min.css">
 
-        <!-- animate link  -->
-        <link rel="stylesheet" href="css/plugin/animate.css" />
+  <!-- animate link  -->
+  <link rel="stylesheet" href="css/plugin/animate.css" />
 
-        <!-- custom css file link  -->
-        <link rel="stylesheet" href="css/style.css"/>
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css" />
 
-        <!-- IF LANG == EN -->
-        <!-- <link rel="stylesheet" href="css/style.ltr.css" /> -->
-        <!-- END IF -->
-    </head>
+  <!-- IF LANG == EN -->
+  <!-- <link rel="stylesheet" href="css/style.ltr.css" /> -->
+  <!-- END IF -->
+</head>
 
-    <body>
+<body>
 
 
-        <!-- ============ header ============ -->
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light top-0">
-                <div class="top-nav">
-                    <div class="container d-flex align-items-center
+  <!-- ============ header ============ -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light top-0">
+      <div class="top-nav">
+        <div class="container d-flex align-items-center
                         justify-content-between">
-                        <div class="contact-info">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon2">
-                                <button class="input-group-text px-0" id="basic-addon2">
-                                    <i class="bi bi-search"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="social">
-                            <button class="btn main-btn primary">
-                                <span>المدونة</span>
-                            </button>
-                            <a href="#en" class="lang">
-                                <span>English</span>
-                                <i class="fa-solid fa-globe"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <button class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon">
-                        </span>
-                    </button>
-                    <a class="navbar-brand p-0 m-0" href="index.html"><img
-                            src="images/logo01.svg" alt=""></a>
-                    <div class="collapse navbar-collapse justify-content-between
+          <div class="contact-info">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon2">
+              <button class="input-group-text px-0" id="basic-addon2">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </div>
+          <div class="social">
+            <button class="btn main-btn primary">
+              <span>المدونة</span>
+            </button>
+            <a href="#en" class="lang">
+              <span>English</span>
+              <i class="fa-solid fa-globe"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+          </span>
+        </button>
+        <a class="navbar-brand p-0 m-0" href="index.html"><img src="images/logo01.svg" alt=""></a>
+        <div class="collapse navbar-collapse justify-content-between
                         align-items-center" id="navbarSupportedContent">
-                        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                            <li class="#">
-                                <a class="nav-link active" aria-current="page"
-                                    href="index.html">الرئيسية</a>
-                            </li>
-                            <li class="#">
-                                <a href="aboutUs.html" class="nav-link">من نحن</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    الباقات
-                                </a>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">باقات الأفراد</a></li>
-                                  <li><a class="dropdown-item" href="#">باقات الشركات</a></li>
-                                </ul>
-                              </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">الخدمات</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">تواصل معنا</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="button-group show-lg">
-                        <a class="btn" href="#">تسجيل دخول</a>
-                        <a class="btn main-btn"
-                            href="#">إنشاء حساب</a>
-                    </div>
-                </div>
-            </nav>
-            <div class="container">
-                <div class="row w-100 justify-content-between align-items-center
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="#">
+              <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+            </li>
+            <li class="#">
+              <a href="aboutUs.html" class="nav-link">من نحن</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                الباقات
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">باقات الأفراد</a></li>
+                <li><a class="dropdown-item" href="#">باقات الشركات</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">الخدمات</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">تواصل معنا</a>
+            </li>
+          </ul>
+        </div>
+        <div class="button-group show-lg">
+          <a class="btn" href="#">تسجيل دخول</a>
+          <a class="btn main-btn" href="#">إنشاء حساب</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row w-100 justify-content-between align-items-center
                     pt-5">
-                    <div class="col-md-6">
-                        <div class="banner-hero">
-                            <h2>نحن شركة إصلاح الأعطال، شريكك الموثوق لإدارة
-                                المرافق والصيانة المنزلية</h2>
-                            <p>سنفعل كل ما يلزم للتأكد من العناية بممتلكاتك أو
-                                منزلك أو عملك بالطريقة التي تريدها</p>
-                            <div class="button-group pb-5">
-                                <button class="btn main-btn primary py-2">احصل على
-                                    باقتك</button>
-                                <a class="btn" href="#">الخدمات</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="hero-img">
-                            <img src="images/Header.png" alt="">
-                            <div class="happy-clients">
-                                <p>+1000</p>
-                                <p>عملاء راضون</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="col-md-6">
+          <div class="banner-hero">
+            <h2>نحن شركة إصلاح الأعطال، شريكك الموثوق لإدارة
+              المرافق والصيانة المنزلية</h2>
+            <p>سنفعل كل ما يلزم للتأكد من العناية بممتلكاتك أو
+              منزلك أو عملك بالطريقة التي تريدها</p>
+            <div class="button-group pb-5">
+              <button class="btn main-btn primary py-2">احصل على
+                باقتك</button>
+              <a class="btn" href="#">الخدمات</a>
             </div>
-        </header>
-
-        <!-- ============ packages ============ -->
-        <section class="packages">
-            <div class="container">
-                <div class="text-center">
-                    <h3 class="sec-title">الباقات</h3>
-                    <p>اذا كنت فرد أو مؤسسة اسال واستكشف خطة الأسعار المناسبة لك</p>
-                </div>
-                <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="member-tab"
-                            data-bs-toggle="tab" data-bs-target="#member-tab-pane"
-                            type="button" role="tab" aria-controls="member-tab-pane"
-                            aria-selected="true">الأفراد
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="company-tab"
-                            data-bs-toggle="tab" data-bs-target="#company-tab-pane"
-                            type="button" role="tab"
-                            aria-controls="company-tab-pane" aria-selected="false">الشركات
-                        </button>
-                    </li>
-                </ul>
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="member-tab-pane"
-                        role="tabpanel" aria-labelledby="member-tab" tabindex="0">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="item">
-                                    <div class="package">
-                                        <div class="package-title">
-        
-                                        </div>
-                                        <div class="package-range">
-
-                                        </div>
-                                    </div> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="company-tab-pane" role="tabpanel"
-                        aria-labelledby="company-tab" tabindex="0">
-    
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="hero-img">
+            <img src="images/Header.png" alt="">
+            <div class="happy-clients">
+              <p>+1000</p>
+              <p>عملاء راضون</p>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ packages ============ -->
+  <section class="packages">
+    <div class="container">
+      <div class="text-center">
+        <h3 class="sec-title">الباقات</h3>
+        <p>اذا كنت فرد أو مؤسسة اسال واستكشف خطة الأسعار المناسبة لك</p>
+      </div>
+      <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="member-tab" data-bs-toggle="tab" data-bs-target="#member-tab-pane"
+            type="button" role="tab" aria-controls="member-tab-pane" aria-selected="true">الأفراد
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="company-tab" data-bs-toggle="tab" data-bs-target="#company-tab-pane"
+            type="button" role="tab" aria-controls="company-tab-pane" aria-selected="false">الشركات
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="member-tab-pane" role="tabpanel" aria-labelledby="member-tab"
+          tabindex="0">
+          <div class="row package-cont">
+            <div class="col-lg-4 col-md-6">
+              <div class=" package">
+                <div class="item">
+                  <a href="package-details.html" class="link"></a>
+                  <h2 class="package-name">الباقة الأساسية </h2>
+                  <div class="package-desc">يتراوح سعرها من 100 ريال الى 300 ريال</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class=" package">
+                <div class="item orange">
+                  <a href="package-details.html" class="link"></a>
+                  <h2 class="package-name orange">الباقة الذهبية </h2>
+                  <div class="package-desc bg-orange white orange-before">يتراوح سعرها من 500 ريال الى
+                    700 ريال</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class=" package">
+                <div class="item">
+                  <a href="package-details.html" class="link"></a>
+                  <h2 class="package-name">الباقة الفضية</h2>
+                  <div class="package-desc">يتراوح سعرها من 300 ريال الى 400 ريال</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="company-tab-pane" role="tabpanel" aria-labelledby="company-tab" tabindex="0">
+          <div class="row package-cont">
+            <div class="col-lg-4 col-md-6">
+              <div class=" package">
+                <div class="item">
+                  <a href="package-details.html" class="link"></a>
+                  <h2 class="package-name">الباقة الأساسية </h2>
+                  <div class="package-desc">يتراوح سعرها من 100 ريال الى 300 ريال</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class=" package">
+                <div class="item orange">
+                  <a href="package-details.html" class="link"></a>
+                  <h2 class="package-name orange">الباقة الذهبية </h2>
+                  <div class="package-desc bg-orange white orange-before">يتراوح سعرها من 500 ريال الى
+                    700 ريال</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class=" package">
+                <div class="item">
+                  <a href="package-details.html" class="link"></a>
+                  <h2 class="package-name">الباقة الفضية</h2>
+                  <div class="package-desc">يتراوح سعرها من 300 ريال الى 400 ريال</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= subscribe ============== -->
+  <section class="subscribe">
+    <div class="container sub-back ">
+      <p class="head">لا تتردد في الإشتراك في باقتنا للحصول على أفضل خدمة</p>
+      <p class="body">فريق عمل خدماتي علي إستعداد دائم لتلبية إحتياجات عملائنا الكرام في جميع الأوقات مهما كان حجم العمل
+      </p>
+      <div class="button-group d-flex justify-content-center">
+        <a href="#" class="btn main-btn">احصل على باقتك</a>
+        <a href="#" class="btn sub-btn ">الخدمات</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ footer ============ -->
+
+  <footer>
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="footer-logo">
+              <img src="images/logo01.svg" alt="footer-logo">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-links">
+              <h3 class="head">روابط الموقع</h3>
+              <ul>
+                <li><a href="#" class="active">الرئيسية</a></li>
+                <li><a href="#" class="">من نحن</a></li>
+                <li><a href="#" class="">باقات الأفراد</a></li>
+                <li><a href="#" class="">باقات الشركات</a></li>
+                <li><a href="#" class="">الخدمات</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-contact">
+              <h3 class="head">خدمة العملاء</h3>
+              <ul>
+                <li><a href="#" class="">تواصل معنا</a></li>
+                <li><a href="#" class="">الأسئلة الشائعة</a></li>
+                <li><a href="#" class="">سياسة الخصوصية</a></li>
+                <li><a href="#" class="">الشروط والأحكام</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-social">
+              <h3 class="head">معلومات التواصل</h3>
+              <ul>
+                <li><a href="tel:+201222810589">+966 123456789</a></li>
+                <li><a href="tel:+201222810589">+966 123456789</a></li>
+                <li><a href="mailto:companymail@gmail.com">companymail@gmail.com</a></li>
+              </ul>
+              <div class="links d-flex ">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <!-- =========== contacts =============  -->
+
+  <div class="contacts">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="contact-info d-flex flex-row justify-content-center align-items-center">
+            <p>يمكنك تحميل التطبيق من خلال</p>
+            <div class="links d-flex align-items-center">
+              <a href="#" class="d-flex"><span>GOOGLE PLAY</span><i class="fa-brands fa-google-play"></i></a>
+              <a href="#" class="d-flex"><span>APP STORE</span><i class="fa-brands fa-apple"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
-        <!-- jQuery script -->
-        <script src="js/plugin/jquery-3.6.0.min.js"></script>
 
-        <!-- bootstrap script -->
-        <script src="js/plugin/bootstrap.bundle.min.js"></script>
 
-        <!-- owl carousel script -->
-        <script src="js/plugin/owl.carousel.min.js"></script>
 
-        <!-- wow script -->
-        <script src="js/plugin/wow.min.js"></script>
 
-        <!-- custom script -->
-        <script src="js/script.js"></script>
-    </body>
+  <!-- jQuery script -->
+  <script src="js/plugin/jquery-3.6.0.min.js"></script>
+
+  <!-- bootstrap script -->
+  <script src="js/plugin/bootstrap.bundle.min.js"></script>
+
+  <!-- owl carousel script -->
+  <script src="js/plugin/owl.carousel.min.js"></script>
+
+  <!-- wow script -->
+  <script src="js/plugin/wow.min.js"></script>
+
+  <!-- custom script -->
+  <script src="js/script.js"></script>
+</body>
 
 </html>
