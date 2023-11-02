@@ -11,6 +11,7 @@
   --text-color: #b1b1b1;
   --background: #F5F6F7;
   --grey: #efefef;
+  --p-grey: #707070;
 }
 
 @font-face {
@@ -231,9 +232,20 @@ section {
   color: var(--white) !important;
   border-radius: 40px 0px 40px 40px;
 }
+
+.unheight{
+  height: unset !important;
+  max-height: unset !important;
+}
+.unmargin{
+  margin: 0 !important;
+}
 /*  */
 
 /* navbar */
+.nav-head{
+  display: none !important;
+}
 .top-nav {
   background: var(--main);
   padding: 0.65rem 0;
@@ -241,11 +253,47 @@ section {
   color: var(--white);
   font-size: 14px;
   font-weight: 300;
+  position: relative;
+}
+.top-nav .search{
+  position: absolute;
+  bottom: -110%;
+  right: 11%;
+  background-color:var(--main);
+  color:  var(--white) !important;
+  border-radius: 35px;
+  width: 25%;
+  padding: 1rem 1rem;
+  
+}
+.top-nav .search::-webkit-input-placeholder{
+  color:  var(--white) !important;
+  
+}
+.top-nav .search::-moz-placeholder{
+  color:  var(--white) !important;
+  
+}
+.top-nav .search:-ms-input-placeholder{
+  color:  var(--white) !important;
+  
+}
+.top-nav .search::-ms-input-placeholder{
+  color:  var(--white) !important;
+  
+}
+.top-nav .search::placeholder{
+  color:  var(--white) !important;
+  
 }
 .contact-info {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 2rem;
+}
+.contact-info a,
+.contact-info button{
+  font-size: 1.3rem;
 }
 .contact-info .info {
   display: flex;
@@ -254,18 +302,21 @@ section {
   color: var(--white) !important;
   font-size: 12px;
 }
-.top-nav .input-group {
-  border-bottom: 1px solid var(--white);
-}
+
 .top-nav .input-group *{
   background: transparent;
   border: none !important;
   color: var(--white) !important;
 }
-.top-nav .input-group input:focus{
+.top-nav .search{
   border: none;
   box-shadow: none !important;
-  background: transparent;
+  /* background: transparent; */
+}
+.top-nav .search:focus{
+  border: none;
+  box-shadow: none !important;
+  /* background: transparent; */
 }
 .top-nav .social {
   display: flex;
@@ -472,6 +523,7 @@ header .partners img {
 .package{
   padding: 0 2rem !important;
 }
+
 .package .item{
   text-align: center;
   background-color: var(--background);
@@ -481,7 +533,9 @@ header .partners img {
   align-items: center;
   flex-direction: column;
   position: relative;
+  transition: .3s;
 }
+
 .item::before{
   content: "";
   position: absolute;
@@ -509,7 +563,6 @@ header .partners img {
 .package-desc{
   color: var(--main);
   background-color: var(--lite-bg);
-  /* font-weight: bold; */
   font-size: 1.2rem;
   padding: 1.5rem 0;
   width: calc(100% + 4rem);
@@ -537,6 +590,76 @@ header .partners img {
 .package-desc.orange-before::before ,
 .package-desc.orange-before::after{
   border-color: transparent transparent var(--dark-primary) transparent !important;
+}
+
+/* =============== services =============== */
+
+.services .head{
+  margin-bottom: 1.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.services .head h3{
+  color: var(--main);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.services .head p{
+  width: 41%;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.services .service{
+  padding: 2.5rem 2rem !important;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 1.3rem;
+}
+.services .service:hover img{
+  transform: rotate(35deg);
+}
+
+.services .service .service-img{
+  width: 60%;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.services .service .service-img img{
+  width: 100%;
+  height: 100%;
+  transition: .3s;
+}
+
+.services .service .service-title{
+  color: var(--main);
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.services .btn-services{
+  background-color: transparent;
+  border-radius: 40px;
+  border: 1px solid var(--primary);
+  color: var(--primary) !important;
+  padding: .7rem 4rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  transition: .3s;
+}
+.services .btn-services:hover{
+  background-color: var(--primary);
+  color: var(--white) !important;
 }
 
 
@@ -604,7 +727,6 @@ footer .footer-logo img{
 footer .head{
   color: var(--main);
   font-size: 1.5rem;
-  /* font-weight: bold; */
   margin-bottom: 1rem;
   position: relative;
   padding-right: 1rem;
@@ -614,7 +736,6 @@ footer .head::after{
   position: absolute;
   bottom: 0;
   right: 0;
-  /* transform: translateY(-50%); */
   width: 4px;
   height: 100%;
   background-color: var(--main);
@@ -644,34 +765,397 @@ footer li a:hover{
 footer .links{
   gap: 3rem;
 }
-footer .links a{
+.contacts .links a{
   font-size: 1.5rem;
   transition: .3s;
 }
 
-footer .links a:hover{
+.contacts .links a:hover{
   transform: translateY(-.6rem);
   color: var(--primary) !important;
 }
 
 /* ========= contacts ========== */
 
+.contacts{
+  padding: 2rem  0 ;
+}
+
+.contacts .contact-info p{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--main);
+}
+
+.contacts .contact-info .down-link{
+  font-size: 1rem;
+  font-weight: bold;
+  transition: .3s;
+  padding: 1rem 2.2rem;
+  border-radius: 35px;
+  box-shadow: 0px 3px 6px #00000029;
+}
+.contacts .contact-info .down-link.link1{
+  color: var(--white) !important;
+  background-color: var(--main);
+}
+.contacts .contact-info .down-link.link2{
+  color:var(--main) ;
+  background-color:  var(--white);
+}
+.contacts .contact-info .down-link i{
+  font-size: 1.5rem;
+}
+
+/* ============= mail ============== */
+
+
+.mail{
+  padding: 2rem 2rem !important;
+  color: var(--white);
+}
+.mail .container{
+  background-color: var(--primary);
+  padding: 3rem 2rem !important;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.mail .main{
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.mail .main .form-control{
+  /* width: 25% !important; */
+  background-color: transparent !important;
+  border-radius: 32px;
+  color: var(--white);
+  font-size: 1rem;
+  border: none !important;
+}
+.mail .main .form-control:focus {
+  border-color: unset !important;
+  box-shadow: unset !important;
+}
+.mail .main .form-control::-webkit-input-placeholder{
+  color: var(--white);
+}
+.mail .main .form-control::-moz-placeholder{
+  color: var(--white);
+}
+.mail .main .form-control:-ms-input-placeholder{
+  color: var(--white);
+}
+.mail .main .form-control::-ms-input-placeholder{
+  color: var(--white);
+}
+.mail .main .form-control::-webkit-input-placeholder{
+  color: var(--white);
+}
+.mail .main .form-control::placeholder{
+  color: var(--white);
+}
+.mail .main .input-group {
+  border-radius: 32px;
+  font-size: 1rem;
+  border: 1px solid var(--white) !important;
+  transition: .3s;
+  width: 50% !important;
+}
+.mail .main .input-group button{
+  border-radius: 32px;
+  color: var(--main) !important;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem !important;
+  border: 1px solid var(--white) !important;
+  transition: .3s;
+  border-top-right-radius: 32px !important;
+    border-bottom-right-radius: 32px !important;
+}
+.mail .main .input-group button:hover{
+  color: var(--white) !important;
+  border: 1px solid var(--main) !important;
+  background-color: var(--main);
+}
+
+
+.mail .title {
+  font-size: 1.4rem;
+  /* font-weight: bold; */
+  margin-bottom: 0rem !important;
+  width: 40% !important;
+}
+
+
+
+
+
+/* ============= rights ============== */
+
+.rights .smart-logo{
+  width: 120px;
+}
+.rights .smart-logo img{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.rights p{
+  font-size: 1rem;
+  margin-bottom: 0rem !important;
+}
+
+/* ====================== end of home page ======================== */
+
+/*========= breadcrumb ===========*/
+
+.breadcrumb{
+margin: 2rem 0 5rem 0;
+}
+
+.breadcrumb .breadcrumb-item{
+  color: var(--main);
+  font-size: 1.4rem;
+  transition: .3s;
+}
+
+.breadcrumb .breadcrumb-item.active{
+  font-weight: bold;
+}
+/* ============ single service page =========== */
+.single-service {
+  background-color: var(--grey);
+}
+.single-service .item .caption p{
+  color: var(--p-grey);
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+  margin-right: 2.5rem;
+  position: relative;
+}
+.single-service .item .caption p::after{
+  content: "";
+    position: absolute;
+    top: 50%;
+    right: -2rem;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 3px;
+    background-color: var(--primary);
+    border-radius: 1px;
+}
+.single-service .item .caption p::before{
+  content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--primary);
+    top: 50%;
+    right: -2rem;
+    transform: translateY(-50%);
+    transition: 0.2s;
+}
+.single-service .price{
+  background-color: var(--white);
+  color: var(--main);
+  border-radius: 16px;
+  padding: .7rem 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.single-service .in-package ,
+.single-service .out-package{
+  padding-top: .8rem !important;
+  padding-bottom: .8rem !important;
+  padding-left: 2.2rem !important;
+  padding-right: 2.2rem !important;
+  font-size: 1.2rem;
+  transition: .3s;
+}
+
+.single-service .in-package:hover{
+  background-color: var(--white) !important;
+  color: var(--primary)  !important;
+}
+
+.single-service .out-package{
+  background-color: transparent !important;
+  border-radius: 45px;
+  color: var(--primary) !important;
+  border: 1px solid var(--primary);
+}
+
+.single-service .out-package:hover{
+  background-color: var(--primary) !important;
+  color: var(--white) !important;
+}
+
+.single-service .service-img{
+  width: 85%;
+  border-radius: 48px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.single-service .service-img img{
+  width: 100%;
+}
+
+.single-service .img-cont{
+  display: flex;
+  justify-content: flex-end !important;
+}
 
 
 
 
 
 
+@media (max-width: 768px){
+  .single-service .service-img{
+  width: 100%;
+}
+  .single-service .img-cont{
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+  }
+  .single-service .in-package ,
+  .single-service .out-package{
+    padding-left: .6rem !important;
+    padding-right: .6rem !important;
+    font-size: .9rem;
+    transition: .3s;
+  }
+  .services .head p{
+    width: 90%;
+  }
+  .nav-head{
+    display: flex !important;
+  }
+  .navbar-toggler , i.fa-close {
+    border: unset;
+    box-shadow: unset;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    color: var(--primary);
+  }
+  i.fa-close{
+    margin-right: 1.5rem;
+    margin-top: 2rem;
+  }
+  .navbar-toggler:focus {
+    border: unset;
+    box-shadow: unset;
+  }
+  .navbar-collapse{
+    position: fixed !important;
+    inset: 0 !important;
+    top: 0 !important;
+    right: -100% !important;
+    background-color: var(--white);
+    height: 100vh;
+    width: 70%;
+    transition: .3s;
+  }
+  .navbar-collapse ul.navbar-nav{
+    margin-top: 3rem !important;
+    margin-right: 1rem !important;
+    gap: 1.5rem;
+  }
+  .navbar-collapse.active{
+    right: 0 !important;
+  }
+  header {
+    height: unset;
+    max-height: unset;
+}
+header .contact-info {
+  width: 40%;
+}
+.top-nav .search{
+  width: 40%;
+}
+footer .footer-logo{
+ margin-bottom: 2rem;
+}
 
+.logo-footer-cont{
+  display: flex;
+  justify-content: center;
+}
 
-
-
-
-
-
-
-@media (max-width: 625px){
   .package{
     margin-bottom: 4rem !important;
   }
+  .subscribe .sub-back .body{
+    width: 100%;
+  }
+  .mail .main{
+    width: 100%;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .mail .main .input-group {
+    width: 100% !important;
+  }
+.mail .title {
+  width: 100% !important;
+  font-size: 1rem;
+  justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+@media (max-width: 625px){ 
+  /* header .header-more{
+    justify-content: center !important;
+    align-items: center !important;
+  } */
+  .top-nav .search{
+    width: 60%;
+  }
+.logo-footer-cont{
+  display: flex;
+  justify-content: flex-start;
+}
+.happy-clients {
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  color: var(--white);
+  text-align: center;
+  width: 150px;
+  box-shadow: -5px 6px 0px 1px #a5b8b8;
+  font-size: 14px;
+}
+  .package{
+    margin-bottom: 4rem !important;
+  }
+  .subscribe .sub-back .body{
+    width: 100%;
+  }
+  .mail .main{
+    width: 100%;
+    gap: 1rem;
+  }
+.mail .title {
+  width: 100% !important;
+  font-size: 1rem;
+}
+}
 }

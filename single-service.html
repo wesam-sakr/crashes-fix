@@ -42,7 +42,7 @@
 
   <!-- ============ header ============ -->
   <!-- the class 'unheight' for header in all pages except home page -->
-  <header>
+  <header class="unheight">
     <nav class="navbar navbar-expand-lg navbar-light top-0">
       <div class="top-nav">
         <div class="container d-flex align-items-center
@@ -78,7 +78,7 @@
           </div>
           <ul class="navbar-nav m-auto mb-2 mb-lg-0">
             <li class="#">
-              <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+              <a class="nav-link " aria-current="page" href="index.html">الرئيسية</a>
             </li>
             <li class="#">
               <a href="aboutUs.html" class="nav-link">من نحن</a>
@@ -94,7 +94,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a href="services.html" class="nav-link">الخدمات</a>
+              <a href="services.html" class="nav-link active">الخدمات</a>
             </li>
             <li class="nav-item">
               <a href="contact-us.html" class="nav-link">تواصل معنا</a>
@@ -112,203 +112,76 @@
       </div>
     </nav>
     <div class="container">
-      <div class="header-more row  justify-content-between align-items-center
-                    pt-5">
-        <div class="col-md-6">
-          <div class="banner-hero">
-            <h2>نحن شركة إصلاح الأعطال، شريكك الموثوق لإدارة
-              المرافق والصيانة المنزلية</h2>
-            <p>سنفعل كل ما يلزم للتأكد من العناية بممتلكاتك أو
-              منزلك أو عملك بالطريقة التي تريدها</p>
-            <div class="button-group pb-5">
-              <button class="btn main-btn primary py-2">احصل على
-                باقتك</button>
-              <a class="btn" href="#">الخدمات</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <div class="hero-img">
-            <img src="images/Header.png" alt="">
-            <div class="happy-clients">
-              <p>+1000</p>
-              <p>عملاء راضون</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <nav style="--bs-breadcrumb-divider: '>>'; " aria-label="breadcrumb"
+        class="d-flex flex-column justify-content-center align-items-center breadcrumb ">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+          <li class="breadcrumb-item active" aria-current="page">الخدمات</li>
+        </ol>
+      </nav>
     </div>
   </header>
 
-  <!-- ============ packages ============ -->
-  <section class="packages">
+
+
+  <!-- ============= single service =============== -->
+
+  <section class="single-service py-5 unmargin">
     <div class="container">
-      <div class="text-center">
-        <h3 class="sec-title">الباقات</h3>
-        <p>اذا كنت فرد أو مؤسسة اسال واستكشف خطة الأسعار المناسبة لك</p>
+      <div class="row gy-5">
+        <div class="col-lg-6 col-md-12 wow fadeInLeft">
+          <div class="head mb-4 wow fadeInLeft">
+            <h2 class="sec-title">خدمة النظافة</h2>
+            <h4 class>نحن شركة إصلاح الأعطال، شريكك الموثوق لإدارة المرافق والصيانة المنزلية</h4>
+          </div>
+          <div class="row items g-4">
+            <div class="col-md-12 item wow fadeInLeft">
+              <div class="caption">
+                <p>سنفعل كل ما يلزم للتأكد من العناية بممتلكاتك أو منزلك أو عملك بالطريقة التي تريدها. لدينا قوة عاملة
+                  قوية تتمتع بخبرة فنية عميقة واهتمام بالتفاصيل وهي في خدمتكم دائمًا، وتتكون من 3200 موظف في جميع
+                  أنحاء المملكة العربية السعودية.</p>
+              </div>
+            </div>
+            <div class="col-md-12 item wow fadeInLeft">
+              <div class="caption">
+                <p>سنفعل كل ما يلزم للتأكد من العناية بممتلكاتك أو منزلك أو عملك بالطريقة التي تريدها. لدينا قوة عاملة
+                  قوية تتمتع بخبرة فنية عميقة واهتمام بالتفاصيل وهي في خدمتكم دائمًا، وتتكون من 3200 موظف في جميع
+                  أنحاء المملكة العربية السعودية.</p>
+              </div>
+            </div>
+            <div class="col-md-12 item wow fadeInLeft">
+              <div class="caption">
+                <p>سنفعل كل ما يلزم للتأكد من العناية بممتلكاتك أو منزلك أو عملك بالطريقة التي تريدها. لدينا قوة عاملة
+                  قوية تتمتع بخبرة فنية عميقة واهتمام بالتفاصيل وهي في خدمتكم دائمًا، وتتكون من 3200 موظف في جميع
+                  أنحاء المملكة العربية السعودية.</p>
+              </div>
+            </div>
+            <div class="col-md-12 wow fadeInLeft">
+              <div class="price">
+                <i class="fa-solid fa-tag mx-2"></i>
+                <span>سعر الخدمة =</span>
+                <span class="cost">70</span>
+                <span>ريال سعودي</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 img-cont wow fadeInLeft">
+          <div class="service-img">
+            <img src="images/Cleaning-service.png" alt="" class="">
+          </div>
+        </div>
       </div>
-      <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="member-tab" data-bs-toggle="tab" data-bs-target="#member-tab-pane"
-            type="button" role="tab" aria-controls="member-tab-pane" aria-selected="true">الأفراد
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="company-tab" data-bs-toggle="tab" data-bs-target="#company-tab-pane"
-            type="button" role="tab" aria-controls="company-tab-pane" aria-selected="false">الشركات
-          </button>
-        </li>
-      </ul>
-      <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="member-tab-pane" role="tabpanel" aria-labelledby="member-tab"
-          tabindex="0">
-          <div class="row package-cont">
-            <div class="col-lg-4 col-md-6">
-              <div class=" package wow fadeInLeft">
-                <div class="item">
-                  <a href="package-details.html" class="link"></a>
-                  <h2 class="package-name">الباقة الأساسية </h2>
-                  <div class="package-desc"> <i class="fa-solid fa-tag mx-2"></i> يتراوح سعرها من 100 ريال الى 300 ريال
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class=" package wow fadeInLeft">
-                <div class="item orange">
-                  <a href="package-details.html" class="link"></a>
-                  <h2 class="package-name orange">الباقة الذهبية </h2>
-                  <div class="package-desc bg-orange white orange-before"> <i class="fa-solid fa-tag mx-2"></i> يتراوح
-                    سعرها
-                    من 500 ريال الى
-                    700 ريال</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class=" package wow fadeInLeft">
-                <div class="item">
-                  <a href="package-details.html" class="link"></a>
-                  <h2 class="package-name">الباقة الفضية</h2>
-                  <div class="package-desc"> <i class="fa-solid fa-tag mx-2"></i> يتراوح سعرها من 300 ريال الى 400 ريال
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="company-tab-pane" role="tabpanel" aria-labelledby="company-tab" tabindex="0">
-          <div class="row package-cont">
-            <div class="col-lg-4 col-md-6">
-              <div class=" package wow fadeInLeft">
-                <div class="item">
-                  <a href="package-details.html" class="link"></a>
-                  <h2 class="package-name">الباقة الأساسية </h2>
-                  <div class="package-desc"> <i class="fa-solid fa-tag mx-2"></i> يتراوح سعرها من 100 ريال الى 300 ريال
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class=" package wow fadeInLeft">
-                <div class="item orange">
-                  <a href="package-details.html" class="link"></a>
-                  <h2 class="package-name orange">الباقة الذهبية </h2>
-                  <div class="package-desc bg-orange white orange-before"> <i class="fa-solid fa-tag mx-2"></i> يتراوح
-                    سعرها
-                    من 500 ريال الى
-                    700 ريال</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class=" package wow fadeInLeft">
-                <div class="item">
-                  <a href="package-details.html" class="link"></a>
-                  <h2 class="package-name">الباقة الفضية</h2>
-                  <div class="package-desc"> <i class="fa-solid fa-tag mx-2"></i> يتراوح سعرها من 300 ريال الى 400 ريال
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="d-flex justify-content-center my-5 gap-5">
+        <a href="book-service.html" class="in-package btn main-btn primary">حجز الخدمة داخل الباقة</a>
+        <a href="book-service.html" class="out-package btn  primary">حجز الخدمة منفصلة</a>
       </div>
     </div>
   </section>
 
-  <!-- ============= services =============== -->
-
-  <section class="services ">
-    <div class="container ">
-      <div class="head">
-        <h3 class="sec-title">الخدمات</h3>
-        <p>فريقنا المتخصص موجود لمساعدتك، سواء كان ذلك في إعداد حزمة الخدمة المناسبة لحل متكامل لإدارة المرافق أو
-          التعامل مع مشكلات الصيانة غير المتكررة</p>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <div class="service position-relative wow fadeInLeft">
-            <a href="single-service.html" class="link"></a>
-            <div class="service-img">
-              <img src="images/clean-serv.svg" alt="service">
-            </div>
-            <div class="service-title">خدمات النظافة</div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="service position-relative wow fadeInLeft">
-            <a href="single-service.html" class="link"></a>
-            <div class="service-img">
-              <img src="images/clean-serv.svg" alt="service">
-            </div>
-            <div class="service-title">خدمات النظافة</div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="service position-relative wow fadeInLeft">
-            <a href="single-service.html" class="link"></a>
-            <div class="service-img">
-              <img src="images/clean-serv.svg" alt="service">
-            </div>
-            <div class="service-title">خدمات النظافة</div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="service position-relative wow fadeInLeft">
-            <a href="single-service.html" class="link"></a>
-            <div class="service-img">
-              <img src="images/clean-serv.svg" alt="service">
-            </div>
-            <div class="service-title">خدمات النظافة</div>
-          </div>
-        </div>
-        <div class="col d-flex align-items-center justify-content-center">
-          <a href="services.html" class="btn btn-services ">المزيد</a>
-        </div>
-      </div>
-
-    </div>
-
-  </section>
 
 
 
-
-
-
-  <!-- ============= subscribe ============== -->
-  <section class="subscribe">
-    <div class="container sub-back ">
-      <p class="head">لا تتردد في الإشتراك في باقتنا للحصول على أفضل خدمة</p>
-      <p class="body">فريق عمل خدماتي علي إستعداد دائم لتلبية إحتياجات عملائنا الكرام في جميع الأوقات مهما كان حجم العمل
-      </p>
-      <div class="button-group d-flex justify-content-center">
-        <a href="#" class="btn main-btn">احصل على باقتك</a>
-        <a href="#" class="btn sub-btn ">الخدمات</a>
-      </div>
-    </div>
-  </section>
 
   <!-- ============ footer ============ -->
 
@@ -325,11 +198,11 @@
             <div class="footer-links">
               <h3 class="head">روابط الموقع</h3>
               <ul>
-                <li><a href="#" class="active">الرئيسية</a></li>
+                <li><a href="#" class="">الرئيسية</a></li>
                 <li><a href="#" class="">من نحن</a></li>
                 <li><a href="#" class="">باقات الأفراد</a></li>
                 <li><a href="#" class="">باقات الشركات</a></li>
-                <li><a href="#" class="">الخدمات</a></li>
+                <li><a href="#" class="active">الخدمات</a></li>
               </ul>
             </div>
           </div>
