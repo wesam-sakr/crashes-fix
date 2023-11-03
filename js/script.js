@@ -10,8 +10,8 @@ else{
 
 
 // ======= search in nav-top ========
-var search_btn = $('#basic-addon2');
-var search_input = $('#search');
+let search_btn = $('#basic-addon2');
+let search_input = $('#search');
 
 search_input.hide();
 
@@ -20,9 +20,9 @@ search_btn.click(function(){
 });
 
 // ==== navbar toggler ======
-var open_nav = $('#open');
-var close_nav = $('#close');
-var nav = $('.navbar-collapse')
+let open_nav = $('#open');
+let close_nav = $('#close');
+let nav = $('.navbar-collapse')
 
 open_nav.click(function () {
     nav.addClass("active");
@@ -32,6 +32,9 @@ close_nav.click(function () {
     nav.removeClass("active");
 });
 
+$(document).on('click' , (e)=>{
+  !$(e.target).closest('.navbar').length ? nav.removeClass("active") : '';
+})
 
 
 

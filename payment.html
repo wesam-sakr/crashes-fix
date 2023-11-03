@@ -124,98 +124,57 @@
 
 
 
-  <!-- ============= book single service =============== -->
+  <!-- =============  payment page =============== -->
 
-  <section class="book-service unmargin py-3">
+  <section class="payment book-service unmargin py-3">
     <div class="container">
-      <div class="row gy-4">
-        <div class="col-md-12">
-          <form action="" class="form form1 wow fadeInUp">
-            <h2 class="sec-title text-center wow fadeInUp">بيانات طالب الخدمة</h2>
-            <div class="row gy-4">
-              <div class="col-md-6">
-                <div class="group wow fadeInUp">
-                  <label for="distance" class="label-form">الجهة</label>
-                  <select class="form-select" aria-label="Default select example" id="distance">
-                    <option selected>فرد</option>
-                    <option value="1">شركة</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="group wow fadeInUp">
-                  <label for="name" class="label-form">الإسم</label>
-                  <input type="text" class="form-control" id="name" aria-label="name">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="group wow fadeInUp">
-                  <label for="country" class="label-form">المدينة</label>
-                  <input type="text" class="form-control" id="country" aria-label="country">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="group wow fadeInUp">
-                  <label for="area" class="label-form">الحي / المنطقة</label>
-                  <input type="text" class="form-control" id="area" aria-label="area">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="group wow fadeInUp">
-                  <label for="villa" class="label-form">رقم العمارة / الفيلا</label>
-                  <input type="text" class="form-control" id="villa" aria-label="villa">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="group wow fadeInUp">
-                  <label for="apartment" class="label-form">رقم الشقة</label>
-                  <input type="text" class="form-control" id="apartment" aria-label="apartment">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="group wow fadeInUp">
-                  <label for="phone" class="label-form">رقم الجوال</label>
-                  <input type="number" class="form-control" id="phone" aria-label="phone">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="group wow fadeInUp">
-                  <label for="email" class="label-form">البريد الإلكتروني</label>
-                  <input type="email" class="form-control" id="email" aria-label="email">
-                </div>
-              </div>
+      <form action="" class="form wow fadeInUp">
+        <div class="methods d-flex align-items-center wow fadeInUp">
+          <p class="">بطاقة الائتمان / الخصم</p>
+          <div class="icons-methods d-flex align-items-center">
+            <div class="method">
+              <img src="images/payment/visa.svg" alt="">
             </div>
-          </form>
-        </div>
-        <div class="col-md-12">
-          <form action="" class="form form2 wow fadeInUp">
-            <h2 class="sec-title text-center">تفاصيل طلب الخدمة</h2>
-            <div class="row gy-4">
-              <div class="col-md-6">
-                <div class="group wow fadeInUp">
-                  <label for="history" class="label-form">التاريخ</label>
-                  <input type="date" class="form-control" id="history" aria-label="history">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="group wow fadeInUp">
-                  <label for="time" class="label-form">الوقت</label>
-                  <input type="time" class="form-control" id="time" aria-label="time">
-                </div>
-              </div>
-              <div class="col-md-12 d-flex justify-content-center align-items-center">
-                <div class="out-time d-flex justify-content-center align-items-center">
-                  <i class="fa-solid fa-exclamation"></i>
-                  <p>نظرًا لاختيار الوقت خارج الدوام سيتم إضافة نسبة إضافية عن المبلغ المدفوع</p>
-                </div>
-              </div>
-              <div class="col-md-12 d-flex justify-content-center align-items-center">
-                <a href="payment.html" class="btn main-btn wow fadeInUp">دفع</a>
-              </div>
+            <div class="method">
+              <img src="images/payment/master.svg" alt="">
             </div>
-          </form>
+            <div class="method">
+              <img src="images/payment/amex.svg" alt="">
+            </div>
+          </div>
         </div>
-      </div>
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <div class="group wow fadeInUp">
+              <label for="name" class="label-form">الاسم كما هو مكتوب فى البطاقة</label>
+              <input type="text" class="form-control" placeholder="الاسم كما هو مكتوب فى البطاقة" id="name"
+                aria-label="name">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="group wow fadeInUp">
+              <label for="card-number" class="label-form">*رقم البطاقة</label>
+              <input type="number" class="form-control" placeholder="رقم الكارت" id="card-number"
+                aria-label="card-number">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="group wow fadeInUp">
+              <label for="expired-date" class="label-form">(MM / YY) *انتهاء الصلاحية</label>
+              <input type="date" class="form-control" placeholder="" id="expired-date" aria-label="expired-date">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="group wow fadeInUp">
+              <label for="cvv" class="label-form">*CVV</label>
+              <input type="number" class="form-control" placeholder="cvv" id="cvv" aria-label="cvv">
+            </div>
+          </div>
+          <div class="col-md-12 d-flex justify-content-center align-items-center">
+            <button class="btn main-btn wow fadeInUp">الدفع</button>
+          </div>
+        </div>
+      </form>
     </div>
   </section>
 

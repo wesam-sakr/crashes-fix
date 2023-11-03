@@ -12,6 +12,8 @@
   --background: #F5F6F7;
   --grey: #efefef;
   --p-grey: #707070;
+  --border:#DBDBDB;
+  --label:#949494;
 }
 
 @font-face {
@@ -239,6 +241,9 @@ section {
 }
 .unmargin{
   margin: 0 !important;
+}
+#close{
+  cursor: pointer;
 }
 /*  */
 
@@ -1014,12 +1019,137 @@ margin: 2rem 0 5rem 0;
   justify-content: flex-end !important;
 }
 
+/* =============== book-service page ================ */
+
+.book-service .form{
+  margin: 0 10rem;
+  padding: 4rem;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+}
+.book-service .form .sec-title{
+  font-weight: 400 !important;
+  margin-bottom: 2rem !important;
+}
+.book-service .form .group label{
+  margin: .7rem 0;
+  color: var(--label);
+}
+
+.book-service .form .group .form-control , 
+.book-service .form .group .form-select{
+  border-radius: 42px;
+  background-color: transparent;
+  border: 1px solid var(--border);
+  /* padding: .7rem 1rem; */
+  font-size: 1.2rem;
+  color: var(--p-grey);
+  transition: .3s;
+}
+
+.book-service .form .group .form-control:focus ,
+.book-service .form .group .form-select:focus {
+  border-color: var(--primary);
+  box-shadow: unset;
+}
+
+.book-service .form .out-time{
+  background-color: var(--main);
+  padding: .6rem 2rem;
+  font-size: 1.1rem;
+  color: var(--white);
+  border-radius: 56px;
+  gap: 2rem;
+  margin-top: .5rem;
+  font-weight: 200;
+}
+
+.book-service .form .out-time i{
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: var(--white);
+  color: var(--main);
+  border-radius: 50%;
+  padding: .3rem .8rem;
+}
+
+.book-service .form .main-btn{
+  background-color: var(--primary) !important;
+  color: var(--white);
+  padding: .5rem 5rem;
+  font-size: 1.2rem;
+  border-radius: 42px;
+  margin-top: 1rem;
+  transition: .3s;
+}
+.book-service .form .main-btn:hover{
+  background-color: var(--main) !important;
+}
+
+/* ========== payment page ============ */
+
+
+.payment .form{
+  border: none !important;
+}
+
+.payment .form .group .form-control{
+  background-color: var(--background) !important;
+  border: none !important;
+}
+
+.payment .methods{
+  margin-bottom: 2rem;
+  color: var(--label);
+  font-size: 1rem;
+  gap: .8rem;
+  padding-right: 1.5rem;
+  position: relative;
+}
+
+.payment .methods::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: var(--main);
+}
+
+.payment .methods .icons-methods{
+  gap: .5rem;
+}
+
+.payment .methods .icons-methods .method{
+  width: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+
+
+
+
+
 
 
 
 
 
 @media (max-width: 991px){
+  .book-service .form .out-time{
+    padding: .4rem .8rem;
+    font-size: 1rem;
+    gap: .7rem;
+  }
+  
+  .book-service .form{
+    margin: 0 .7rem;
+    padding: 1.5rem;
+  }
   .single-service .service-img{
   width: 100%;
 }
