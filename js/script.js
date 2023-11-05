@@ -37,6 +37,22 @@ $(document).on('click' , (e)=>{
 })
 
 
+/*================ payment page =================*/
+
+$(document).ready(function () {
+  let online_chose = $('.method'); 
+  let pay_form = $('.pay-form');
+  
+  online_chose.on('change', function () {
+    if (this.value === 'online-pay' && this.checked) {
+      pay_form.show(500);
+    } else {
+      pay_form.hide(500);
+    }
+  });
+});
+
+
 
 // loader
 $('#loading').fadeOut(500);

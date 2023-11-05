@@ -14,6 +14,7 @@
   --p-grey: #707070;
   --border:#DBDBDB;
   --label:#949494;
+  --accordion: #EEEEEE;
 }
 
 @font-face {
@@ -938,9 +939,9 @@ margin: 2rem 0 5rem 0;
 }
 .single-service .item .caption p{
   color: var(--p-grey);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: .5rem;
-  margin-right: 2.5rem;
+  margin-right: 2rem;
   position: relative;
 }
 .single-service .item .caption p::after{
@@ -1093,30 +1094,44 @@ margin: 2rem 0 5rem 0;
   border: none !important;
 }
 
-.payment .form .group .form-control{
-  background-color: var(--background) !important;
-  border: none !important;
+.payment .form .group .form-control::-webkit-input-placeholder{
+  font-size: .9rem !important;
 }
-
+.payment .form .group .form-control::-moz-placeholder{
+  font-size: .9rem !important;
+}
+.payment .form .group .form-control:-ms-input-placeholder{
+  font-size: .9rem !important;
+}
+.payment .form .group .form-control::-ms-input-placeholder{
+  font-size: .9rem !important;
+}
+.payment .form .group .form-control::placeholder{
+  font-size: .9rem !important;
+}
 .payment .methods{
   margin-bottom: 2rem;
   color: var(--label);
   font-size: 1rem;
   gap: .8rem;
-  padding-right: 1.5rem;
   position: relative;
 }
+.form-check-input ,
+.form-check label{
+  cursor: pointer;
+}
+.form-check-input:checked[type=radio] {
+  --bs-form-check-bg-image: unset;
+}
 
-.payment .methods::after{
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
+.form-check-input:checked {
   background-color: var(--main);
+  border-color: none;
+}
+.form-check-input:focus{
+  background-color: var(--main);
+  border-color: none;
+  box-shadow: none;
 }
 
 .payment .methods .icons-methods{
@@ -1129,6 +1144,104 @@ margin: 2rem 0 5rem 0;
      object-fit: cover;
 }
 
+/* ============ roles page ============== */
+
+.roles , .faq , .policies{
+  background-color: transparent !important;
+}
+
+.single-service .item .caption p::after{
+    top: 13%;
+    transform: translateY(-13%);
+}
+.single-service .item .caption p::before{
+    top: 13%;
+    transform: translateY(-50%);
+}
+
+/* =========== faq ============ */
+
+.faq .title{
+  font-size: 1.4rem;
+  color: var(--main);
+}
+
+.faq .form-control{
+  border-radius: 42px;
+  background-color: transparent;
+  border: none;
+  /* padding: .1rem 1rem !important; */
+  font-size: 1rem;
+  color: var(--p-grey);
+  transition: .3s;
+}
+.faq .btn-primary{
+  background-color: transparent !important;
+  border-color: var(--primary);
+  color: var(--primary);
+  padding: .5rem 5rem;
+  font-size: 1.2rem;
+  border-radius: 42px;
+  margin-top: 1rem;
+  transition: .3s;
+  border-top-right-radius: 42px !important;
+  border-bottom-right-radius: 42px !important;
+}
+
+.faq .btn-primary:hover{
+  background-color: var(--primary) !important;
+  color: var(--white) !important;
+}
+
+.faq .form-control:focus {
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+.accordion-item {
+  color: var(--main);
+  /* background-color: var(--main); */
+  border: none;
+  /* border-radius: 42px; */
+  margin-bottom: 1.5rem;
+}
+/* .accordion-button:not(.collapsed) {
+  color: var(--main);
+  background-color: var(--background);
+  box-shadow: none;
+  border-radius: 42px;
+} */
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--white);
+  background-color: var(--main);
+  box-shadow: none;
+  border-radius: 42px;
+}
+.accordion-item:first-of-type .accordion-button {
+  border-top-right-radius: 42px;
+  border-top-left-radius: 42px;
+}
+
+.accordion-button:not(.collapsed)::after {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.accordion-item .accordion-button.collapsed {
+  border-radius: 42px !important;
+  background-color: var(--accordion);
+  color: var(--main);
+  font-size: 1.2rem;
+}
 
 
 
@@ -1138,6 +1251,17 @@ margin: 2rem 0 5rem 0;
 
 
 
+
+
+
+
+
+
+
+
+
+
+/* ================== media query ===============*/
 
 @media (max-width: 991px){
   .book-service .form .out-time{
@@ -1147,8 +1271,8 @@ margin: 2rem 0 5rem 0;
   }
   
   .book-service .form{
-    margin: 0 .7rem;
-    padding: 1.5rem;
+    margin: 0 0rem;
+    padding: 1rem;
   }
   .single-service .service-img{
   width: 100%;
