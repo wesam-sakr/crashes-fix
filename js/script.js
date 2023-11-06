@@ -16,7 +16,7 @@ let search_input = $('#search');
 search_input.hide();
 
 search_btn.click(function(){
-    search_input.toggle(500);
+    search_input.toggle(200);
 });
 
 // ==== navbar toggler ======
