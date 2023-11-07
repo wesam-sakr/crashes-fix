@@ -262,13 +262,13 @@ section {
   position: relative;
 }
 .top-nav .search{
-  /* position: absolute;
+  position: absolute;
   bottom: -110%;
-  right: 11%; */
+  right: 11%;
   background-color:var(--main);
   color:  var(--white) !important;
   border-radius: 35px;
-  /* width: 25%; */
+  width: 25%;
   padding: 1rem 1rem;
   border: none;
   box-shadow: none !important;
@@ -1244,7 +1244,7 @@ margin: 2rem 0 5rem 0;
 
 .contact-us .contact{
   background-color: var(--background);
-  padding: 2.5rem 4.5rem 2rem 3rem;
+  padding: 2.5rem 2rem;
   margin: 0 0 0 .5rem;
   border-radius: 10px;
 }
@@ -1258,7 +1258,6 @@ margin: 2rem 0 5rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
 }
 .contact-us .contact a span{
   transition: .3s;
@@ -1347,9 +1346,196 @@ margin: 2rem 0 5rem 0;
 }
 
 
+/* ============== profile ================= */
+
+.user-profile .profile-photo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--p-color);
+  margin-bottom: 2rem;
+}
+.user-profile .main{
+  position: relative;
+}
+.user-profile .main .camera{
+  position: absolute;
+  bottom: 18%;
+  right: 0px;
+  transform: translateX(-18%);
+  width: 40px;
+  height: 40px;
+  background-color: var(--main);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .3s;
+  z-index: 222;
+}
+.user-profile .profile-photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.user-profile .profile-photo input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.profile.book-service .form {
+  margin: 0 ;
+  padding: 0;
+  border: none;
+  border-radius: unset;
+}
+
+.profile .user-details{
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--dark-bg);
+  margin-bottom: 2rem;
+}
+
+.profile .nav{
+  padding: 1.5rem 0;
+  background-color: var(--background);
+  width: 75%;
+  border-radius: 10px;
+}
+
+.profile .nav .user-details{
+  width: 100%;
+  text-align: center;
+}
+
+.profile .nav .user-details h3{
+  color: var(--main);
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: .8rem;
+}
+
+.profile .nav .user-details p{
+  color: var(--p-grey);
+  font-size: 1.2rem;
+}
+
+.profile .nav-pills .nav-link {
+  width: 100%;
+  margin-bottom: 1rem ;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--gray-color);
+  padding-right: 2rem;
+  position: relative;
+}
+
+.profile .nav-pills .nav-link.active{
+  background-color: var(--accordion);
+  color: var(--main);
+}
+.profile .nav-pills .nav-link.active::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 3px;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 80%;
+  background-color: var(--primary);
+  border-radius: 3px;
+}
+
+.profile .form .btn{
+  background-color: transparent !important;
+  border: 1px solid var(--primary) !important;
+  color: var(--primary) !important;
+  transition: .3s;
+}
+.profile .form .btn:hover{
+  background-color: var(--primary) !important;
+  color: var(--white) !important;
+}
+.profile .title{
+  color: var(--main);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.profile .packages{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 65%;
+  background-color: var(--background);
+  padding: 1.5rem 2rem;
+  border-radius: 49px;
+  margin-top: 1.5rem;
+}
+.profile .packages .info h4:nth-child(2){
+  margin: .8rem 0;
+}
+.profile .packages .info .kind{
+  color: var(--primary);
+}
+.profile .packages .info .subscribe{
+  color: var(--main);
+}
+.profile .packages .info .remain{
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.profile .packages .img{
+  width: 150px;
+  height: 150px;
+}
+.profile .packages .btn{
+  background-color: transparent !important;
+  color: var(--primary) !important;
+  border: 1px solid var(--primary);
+  transition: .3s;
+}
+.profile .packages .btn:hover{
+  background-color: var(--primary) !important;
+  color: var(--white) !important;
+}
+
+
+
+
+
+
+
+
+
 /* ================== media query ===============*/
 
 @media (max-width: 991px){
+  .profile .packages {
+    width: 100%;
+    justify-content: center;
+}
+  .profile .nav {
+    width: 100%;
+}
+.profile .nav-pills .nav-link {
+  font-size: 1rem;
+  padding-right: 1rem;
+}
   .who-we .paragraphs p {
     color: var(--p-grey);
     font-size: 1rem;
