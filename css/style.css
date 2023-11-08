@@ -1525,6 +1525,7 @@ margin: 2rem 0 5rem 0;
 .login svg{
   position: absolute;
   bottom: 0;
+  z-index: -1;
 }
 .login .logo{
   margin: 2rem 0 4rem 0;
@@ -1540,13 +1541,13 @@ margin: 2rem 0 5rem 0;
 }
 
 .login .form{
-  z-index: 2;
+  z-index: 2222222;
   padding: 3rem 12rem;
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   right: 50%;
-  transform: translate(50% , -50%);
-  width: 80%;
+  transform: translate(50% , -50%); */
+  /* width: 80%; */
   background: var(--white) 0% 0% no-repeat padding-box;
   box-shadow: -25px 25px 50px #0000000D;
   border-radius: 30px;
@@ -1615,6 +1616,9 @@ margin: 2rem 0 5rem 0;
 /* ================== media query ===============*/
 
 @media (max-width: 991px){
+  .login .form{
+    padding: 2.5rem .5rem;
+  }
   .login .form h5{
     font-size: 1.2rem;
     margin-bottom: 1rem;
@@ -1628,13 +1632,9 @@ margin: 2rem 0 5rem 0;
     font-size: 1rem;
   }
   .login .logo{
-    margin: 2rem 0 1.5rem 0;
+    margin: 1rem 0 1.5rem 0;
   }
-  .login .form{
-    width: 90%;
-    padding: 1.5rem 1rem;
-    top: 50%;
-  }
+
   .profile .packages {
     width: 100%;
     justify-content: center;
@@ -1793,6 +1793,9 @@ footer .footer-logo{
 
 
 @media (max-width: 625px){ 
+  .login .form{
+    padding: 1rem .5rem;
+  }
   .login .form{
     background: var(--white) 0% 0% no-repeat padding-box;
     box-shadow: unset;
