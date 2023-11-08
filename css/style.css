@@ -1037,7 +1037,6 @@ margin: 2rem 0 5rem 0;
   border-radius: 42px;
   background-color: transparent;
   border: 1px solid var(--border);
-  /* padding: .7rem 1rem; */
   font-size: 1.2rem;
   color: var(--p-grey);
   transition: .3s;
@@ -1514,6 +1513,97 @@ margin: 2rem 0 5rem 0;
   color: var(--white) !important;
 }
 
+/* ============== login page ================= */
+
+.login {
+  height: 100vh;
+  max-height: 100vh;
+  /* overflow: hidden; */
+  position: relative;
+  
+}
+.login svg{
+  position: absolute;
+  bottom: 0;
+}
+.login .logo{
+  margin: 2rem 0 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.login .logo img{
+  width: 150px;
+  justify-content: center;
+  
+}
+
+.login .form{
+  z-index: 2;
+  padding: 3rem 12rem;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50% , -50%);
+  width: 80%;
+  background: var(--white) 0% 0% no-repeat padding-box;
+  box-shadow: -25px 25px 50px #0000000D;
+  border-radius: 30px;
+}
+
+.login .form h5{
+  color: var(--p-grey);
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+.login .form h6{
+  color: var(--main);
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.login .form .create-acc{
+  font-size: 1.2rem;
+}
+.login .form .create-acc span{
+  color: var(--p-grey);
+}
+
+
+.login .form .group label{
+  margin: .7rem 0;
+  color: var(--label);
+}
+
+.login .form .group .form-control{
+  border-radius: 42px;
+  background-color: transparent;
+  border: 1px solid var(--border);
+  font-size: 1.2rem;
+  color: var(--p-grey);
+  transition: .3s;
+}
+
+.login .form .group .form-control:focus{
+  border-color: var(--primary);
+  box-shadow: unset;
+}
+
+.login .form .login-btn{
+  font-size: 1.2rem !important;
+  padding: .5rem 4rem !important;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1525,6 +1615,26 @@ margin: 2rem 0 5rem 0;
 /* ================== media query ===============*/
 
 @media (max-width: 991px){
+  .login .form h5{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .login .form h6{
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+  }
+  
+  .login .form .create-acc{
+    font-size: 1rem;
+  }
+  .login .logo{
+    margin: 2rem 0 1.5rem 0;
+  }
+  .login .form{
+    width: 90%;
+    padding: 1.5rem 1rem;
+    top: 50%;
+  }
   .profile .packages {
     width: 100%;
     justify-content: center;
@@ -1683,6 +1793,13 @@ footer .footer-logo{
 
 
 @media (max-width: 625px){ 
+  .login .form{
+    background: var(--white) 0% 0% no-repeat padding-box;
+    box-shadow: unset;
+  }
+    .login svg{
+  display: none !important;
+}
   .contact-us .contact {
     padding: 2.5rem 2rem 2rem 2rem;
     margin: 0 0 0 0rem;
