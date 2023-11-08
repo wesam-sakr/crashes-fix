@@ -73,6 +73,43 @@ if( file !=null){
 }
 
 
+/* ============ single=blog page ============= */
+
+let nav_link = document.querySelectorAll('.nav-link');
+
+nav_link.forEach((link) => {
+    link.addEventListener('click', () => {
+        nav_link.forEach((link) => {
+            link.classList.remove('active');
+        })
+        link.classList.add('active')
+    })
+})
+
+let nav_links = document.querySelectorAll('.blog .nav-link');
+let content_sections = document.querySelectorAll('.blog .content');
+
+
+change_active = ()=>{
+
+    let height = window.scrollY ;
+
+    content_sections.forEach((section , i)=>{
+console.log(section.offsetTop);
+        if(height >= section.offsetTop - section.offsetHeight * 0.25 ){
+            nav_links.forEach((link)=>{
+                link.classList.remove('active');
+            })
+            nav_links[i].classList.add('active');
+        }
+        
+    })
+
+}
+
+window.addEventListener('scroll', change_active);
+
+
 // loader
 $('#loading').fadeOut(500);
 
