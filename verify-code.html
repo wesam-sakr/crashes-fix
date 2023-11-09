@@ -47,18 +47,16 @@
         <img src="images/logo01.svg" class="" alt="logo">
       </div>
       <form action="" class="form ">
-        <div class="row  gy-3 ">
-          <div class="col-md-12 text-center">
-            <h6>استعادة كلمة المرور</h6>
+        <h6 class="text-center">ادخل كود التأكيد</h6>
+        <div id="form">
+          <div class="verify">
+            <input class="code" type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}">
+            <input class="code" type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}">
+            <input class="code" type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}">
+            <input class="code" type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}">
           </div>
-          <div class="col-md-12">
-            <div class="group  d-flex justify-content-center align-items-center flex-column ">
-              <label for="email" class="label-form">ادخل البريد الألكتروني</label>
-              <input type="email" class="form-control" placeholder="" id="email" aria-label="email">
-            </div>
-          </div>
-          <div class="col-md-12 d-flex justify-content-center align-items-center">
-            <a href="verify-code.html" class="btn main-btn primary login-btn mt-4 mb-2">التالي</a>
+          <div class="d-flex justify-content-center align-items-center">
+            <a href="new-pass.html" class="btn main-btn primary" id="sendVerifyCode">إرسال</a>
           </div>
         </div>
       </form>

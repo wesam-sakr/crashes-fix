@@ -84,7 +84,7 @@
               <a href="aboutUs.html" class="nav-link">من نحن</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link  active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 الباقات
               </a>
@@ -94,7 +94,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a href="services.html" class="nav-link active">الخدمات</a>
+              <a href="services.html" class="nav-link">الخدمات</a>
             </li>
             <li class="nav-item">
               <a href="contact-us.html" class="nav-link">تواصل معنا</a>
@@ -116,7 +116,7 @@
         class="d-flex flex-column justify-content-center align-items-center breadcrumb ">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
-          <li class="breadcrumb-item active" aria-current="page">الخدمات</li>
+          <li class="breadcrumb-item active" aria-current="page">الباقات</li>
         </ol>
       </nav>
     </div>
@@ -124,168 +124,75 @@
 
 
 
-  <!-- ============= services =============== -->
+  <!-- ============= book single service =============== -->
 
-  <section class="services">
-    <div class="container ">
-      <div class="head">
-        <h3 class="sec-title">الخدمات</h3>
-        <p>فريقنا المتخصص موجود لمساعدتك، سواء كان ذلك في إعداد حزمة الخدمة المناسبة لحل متكامل لإدارة المرافق أو
-          التعامل مع مشكلات الصيانة غير المتكررة</p>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <div class="service position-relative wow fadeInUp">
-            <a href="single-service.html" class="link"></a>
-            <div class="service-img">
-              <img src="images/clean-serv.svg" alt="service">
+  <section class="book-service unmargin py-3">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-12">
+          <form action="" class="form form1 wow fadeInUp">
+            <h2 class="sec-title text-center wow fadeInUp">بيانات طالب الخدمة</h2>
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="group wow fadeInUp">
+                  <label for="distance" class="label-form">الجهة</label>
+                  <select class="form-select" aria-label="Default select example" id="distance">
+                    <option selected>فرد</option>
+                    <option value="1">شركة</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="group wow fadeInUp">
+                  <label for="name" class="label-form">الإسم</label>
+                  <input type="text" class="form-control" id="name" aria-label="name">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="group wow fadeInUp">
+                  <label for="country" class="label-form">المدينة</label>
+                  <input type="text" class="form-control" id="country" aria-label="country">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="group wow fadeInUp">
+                  <label for="area" class="label-form">الحي / المنطقة</label>
+                  <input type="text" class="form-control" id="area" aria-label="area">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="group wow fadeInUp">
+                  <label for="villa" class="label-form">رقم العمارة / الفيلا</label>
+                  <input type="text" class="form-control" id="villa" aria-label="villa">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="group wow fadeInUp">
+                  <label for="apartment" class="label-form">رقم الشقة</label>
+                  <input type="text" class="form-control" id="apartment" aria-label="apartment">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="group wow fadeInUp">
+                  <label for="phone" class="label-form">رقم الجوال</label>
+                  <input type="number" class="form-control" id="phone" aria-label="phone">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="group wow fadeInUp">
+                  <label for="email" class="label-form">البريد الإلكتروني</label>
+                  <input type="email" class="form-control" id="email" aria-label="email">
+                </div>
+              </div>
+              <div class="col-md-12 d-flex justify-content-center align-items-center">
+                <button class="btn main-btn wow fadeInUp">ارسال</button>
+              </div>
             </div>
-            <div class="service-title">خدمات النظافة</div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="service position-relative wow fadeInUp">
-            <a href="single-service.html" class="link"></a>
-            <div class="service-img">
-              <img src="images/clean-serv.svg" alt="service">
-            </div>
-            <div class="service-title">خدمات النظافة</div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="service position-relative wow fadeInUp">
-            <a href="single-service.html" class="link"></a>
-            <div class="service-img">
-              <img src="images/clean-serv.svg" alt="service">
-            </div>
-            <div class="service-title">خدمات النظافة</div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="service position-relative wow fadeInUp">
-            <a href="single-service.html" class="link"></a>
-            <div class="service-img">
-              <img src="images/clean-serv.svg" alt="service">
-            </div>
-            <div class="service-title">خدمات النظافة</div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="service position-relative wow fadeInUp">
-            <a href="single-service.html" class="link"></a>
-            <div class="service-img">
-              <img src="images/clean-serv.svg" alt="service">
-            </div>
-            <div class="service-title">خدمات النظافة</div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="service position-relative wow fadeInUp">
-            <a href="single-service.html" class="link"></a>
-            <div class="service-img">
-              <img src="images/clean-serv.svg" alt="service">
-            </div>
-            <div class="service-title">خدمات النظافة</div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="service position-relative wow fadeInUp">
-            <a href="single-service.html" class="link"></a>
-            <div class="service-img">
-              <img src="images/clean-serv.svg" alt="service">
-            </div>
-            <div class="service-title">خدمات النظافة</div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="service position-relative wow fadeInUp">
-            <a href="single-service.html" class="link"></a>
-            <div class="service-img">
-              <img src="images/clean-serv.svg" alt="service">
-            </div>
-            <div class="service-title">خدمات النظافة</div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="service position-relative wow fadeInUp">
-            <a href="single-service.html" class="link"></a>
-            <div class="service-img">
-              <img src="images/clean-serv.svg" alt="service">
-            </div>
-            <div class="service-title">خدمات النظافة</div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="service position-relative wow fadeInUp">
-            <a href="single-service.html" class="link"></a>
-            <div class="service-img">
-              <img src="images/clean-serv.svg" alt="service">
-            </div>
-            <div class="service-title">خدمات النظافة</div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="service position-relative wow fadeInUp">
-            <a href="single-service.html" class="link"></a>
-            <div class="service-img">
-              <img src="images/clean-serv.svg" alt="service">
-            </div>
-            <div class="service-title">خدمات النظافة</div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="service position-relative wow fadeInUp">
-            <a href="single-service.html" class="link"></a>
-            <div class="service-img">
-              <img src="images/clean-serv.svg" alt="service">
-            </div>
-            <div class="service-title">خدمات النظافة</div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="service position-relative wow fadeInUp">
-            <a href="single-service.html" class="link"></a>
-            <div class="service-img">
-              <img src="images/clean-serv.svg" alt="service">
-            </div>
-            <div class="service-title">خدمات النظافة</div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="service position-relative wow fadeInUp">
-            <a href="single-service.html" class="link"></a>
-            <div class="service-img">
-              <img src="images/clean-serv.svg" alt="service">
-            </div>
-            <div class="service-title">خدمات النظافة</div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="service position-relative wow fadeInUp">
-            <a href="single-service.html" class="link"></a>
-            <div class="service-img">
-              <img src="images/clean-serv.svg" alt="service">
-            </div>
-            <div class="service-title">خدمات النظافة</div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="service position-relative wow fadeInUp">
-            <a href="single-service.html" class="link"></a>
-            <div class="service-img">
-              <img src="images/clean-serv.svg" alt="service">
-            </div>
-            <div class="service-title">خدمات النظافة</div>
-          </div>
+          </form>
         </div>
       </div>
-
     </div>
-
   </section>
-
-
-
 
 
 
@@ -306,11 +213,11 @@
             <div class="footer-links">
               <h3 class="head">روابط الموقع</h3>
               <ul>
-                <li><a href="index.html" class="">الرئيسية</a></li>
+                <li><a href="index.html" class="active">الرئيسية</a></li>
                 <li><a href="aboutUs.html" class="">من نحن</a></li>
                 <li><a href="member-packages.html" class="">باقات الأفراد</a></li>
                 <li><a href="companies-packages.html" class="">باقات الشركات</a></li>
-                <li><a href="services.html" class="active">الخدمات</a></li>
+                <li><a href="services.html" class="">الخدمات</a></li>
               </ul>
             </div>
           </div>
