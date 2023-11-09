@@ -198,10 +198,24 @@ svg {
   inset: 0;
   z-index: 1;
 }
-/* .btn{
-    padding: .4rem 2.7rem;
-    font-size: 14px;
-} */
+body{
+  position: relative !important;
+}
+.whats-app{
+  position: fixed !important;
+  bottom: 3rem;
+  right: 3rem;
+  display: block;
+  width: 50px !important;
+  height: 50px !important;
+}
+.whats-app img{
+  width: 100% !important;
+  height: 100% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .main-btn {
   padding: 0.35rem 2.2rem;
   border-radius: 35px;
@@ -248,6 +262,9 @@ section {
 #close{
   cursor: pointer;
 }
+
+
+
 /*  */
 
 /* navbar */
@@ -2129,10 +2146,12 @@ gap: .5rem;
 
 
 
-
 /* ================== media query ===============*/
 
 @media (max-width: 991px){
+  .contacts .contact-info .down-link {
+    font-size: .9rem;
+}
   .details .child2 {
     width: 100% !important;
 }
@@ -2368,6 +2387,12 @@ footer .footer-logo{
 
 
 @media (max-width: 625px){ 
+  .form-check-input, .form-check label p {
+    font-size: .9rem;
+}
+.payment .methods .icons-methods .method {
+    width: 1.3rem;
+}
   .term .container .sec-title , .details .container .sec-title , .kind .container .sec-title{
     font-size: 1.2rem ;
   }
