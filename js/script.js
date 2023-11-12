@@ -42,11 +42,14 @@ $(document).on('click' , (e)=>{
 $(document).ready(function () {
   let online_chose = $('.method'); 
   let pay_form = $('.pay-form');
-  
+  let cash_form = $('.cash-pay');
+  cash_form.hide();
   online_chose.on('change', function () {
     if (this.value === 'online-pay' && this.checked) {
       pay_form.show(500);
-    } else {
+      cash_form.hide(500);
+    }else if(this.value === 'cash' && this.checked){
+      cash_form.show(100);
       pay_form.hide(500);
     }
   });
@@ -58,9 +61,13 @@ $(document).ready(function () {
 let profile_photo = document.getElementById('profile-photo');
 let photo = document.getElementById('photo');
 let file = document.getElementById('file');
+let camera_btn = document.getElementById('camera')
+let confirm_btn = document.getElementById('accept')
 
 if( file !=null){
+
   file.onchange = ()=>{
+    confirm_btn.style.display = 'flex';
     let choosedFile = file.files[0];
     if(choosedFile){
       let reader = new FileReader();
@@ -72,6 +79,12 @@ if( file !=null){
   }
 }
 
+if(file != null){
+  camera_btn.onclick = ()=>{
+    file.click();
+  }
+
+}
 
 /* ============ single=blog page ============= */
 
@@ -109,10 +122,15 @@ console.log(section.offsetTop);
 
 window.addEventListener('scroll', change_active);
 
+/*===============================================*/
 
-$(document).ready(function() {
+const kind = document.getElementById('#select-kind');
+
+if(kind != null){
   $('select').niceSelect();
-});
+}
+
+/*==================================================*/
 
 
 
@@ -147,6 +165,7 @@ const inputElements = [...document.querySelectorAll('input.code')]
       const code = inputElements.map(({value})=>value).join('')
       console.log(code)
     }
+
 
 
 

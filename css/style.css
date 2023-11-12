@@ -201,10 +201,10 @@ svg {
 body{
   position: relative !important;
 }
-.whats-app{
+.whats-app {
   position: fixed !important;
-  bottom: 3rem;
-  right: 3rem;
+  bottom: 1rem;
+  right: 1rem;
   display: block;
   width: 50px !important;
   height: 50px !important;
@@ -555,7 +555,7 @@ header .partners img {
   transition: .3s;
 }
 
-.item::before{
+/* .item::before{
   content: "";
   position: absolute;
   top: -30px;
@@ -566,7 +566,7 @@ header .partners img {
   border-radius: 21px;
   background-color: var(--grey);
   z-index: -1;
-}
+} */
 
 .item.orange::before{
   background-color: var(--primary);
@@ -815,6 +815,7 @@ footer .links{
   padding: 1rem 2.2rem;
   border-radius: 35px;
   box-shadow: 0px 3px 6px #00000029;
+  gap: 5px;
 }
 .contacts .contact-info .down-link.link1{
   color: var(--white) !important;
@@ -1398,6 +1399,25 @@ margin: 2rem 0 5rem 0;
   transition: .3s;
   z-index: 222;
 }
+.user-profile .main .accept{
+  position: absolute;
+  bottom: 18%;
+  left: 0px;
+  transform: translateX(18%);
+  width: 40px;
+  height: 40px;
+  background-color: var(--main);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .3s;
+  z-index: 222;
+  display: none;
+}
+
 .user-profile .profile-photo img {
   width: 100%;
   height: 100%;
@@ -1436,7 +1456,12 @@ margin: 2rem 0 5rem 0;
   width: 75%;
   border-radius: 10px;
 }
-
+.profile .nav .logout{
+  padding: .7rem 3rem !important;
+}
+.profile .nav .logout i{
+  margin-left: .5rem;
+}
 .profile .nav .user-details{
   width: 100%;
   text-align: center;
@@ -2420,6 +2445,7 @@ header .banner-hero p{
 .blog .content {
     padding: 0rem;
     margin: 0rem;
+    margin-bottom: 2rem !important;
 }
   .login .form .login-btn{
   font-size: 1.2rem !important;
@@ -2455,16 +2481,17 @@ header .banner-hero p{
     width: 50px !important;
 }
 .main-btn {
-  padding: 0.35rem 1.8rem;
+  padding: 0.35rem .9rem;
 }
 header .button-group .btn{
-  font-size: .7rem;
+  font-size: 1rem;
 }
 .nav-tabs .nav-link {
   padding: 0.75rem 2.5rem;
 }
 .contacts .contact-info .down-link {
-  padding: 1rem 0.5rem;
+  padding: 0.8rem 0.7rem;
+
 }
 .contacts .contact-info p {
   font-size: 1.2rem;
