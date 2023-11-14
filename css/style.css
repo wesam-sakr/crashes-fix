@@ -2072,7 +2072,7 @@ gap: .5rem;
 /* ============ term =========== */
 
 .term .form-check-input:checked[type=radio] {
-  --bs-form-check-bg-image: url('/images/icons/Right.svg') !important;
+  --bs-form-check-bg-image: url('../images/icons/Right.svg') !important;
   display: flex;
   background-size: 95%;
   align-items: center;
