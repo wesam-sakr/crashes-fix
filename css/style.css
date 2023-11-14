@@ -209,7 +209,7 @@ body{
   width: 50px !important;
   height: 50px !important;
   z-index: 22222;
-  background-color: #25D366;
+  background-color: #18BB1D;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1365,13 +1365,16 @@ margin: 2rem 0 5rem 0;
 .who-we .title{
   color: var(--main);
   font-weight: bold;
-  font-size: 1.6rem;
-  line-height: 1.5;
+  font-size: 2rem;
+  line-height: 2;
 }
-
+.who-we .s-title{
+  font-weight: bold;
+  line-height: 1.8;
+}
 .who-we .paragraphs p{
   color: var(--p-grey);
-  font-size: 1.2rem;
+  line-height: 2;
 }
 .who-we .button-group .btn{
   font-size: 1.2rem;
@@ -2096,9 +2099,10 @@ flex-grow: 1;
 /* ============ term =========== */
 
 .term .form-check-input:checked[type=radio] {
-  background-image: url('../images/icons/Right.svg') !important;
+  background-image: url(../images/icons/Right.svg) !important;
   display: flex;
-  background-size: 95%;
+  background-size: 92%;
+  background-position: bottom;
   align-items: center;
   justify-content: center;
   padding: 0 0 0 20px;
@@ -2224,6 +2228,11 @@ flex-grow: 1;
 
 
 @media (max-width: 991px){
+  .happy-clients {
+    top: 88%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
   .details::before {
     width: 75%;
