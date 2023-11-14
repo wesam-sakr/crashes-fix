@@ -216,7 +216,11 @@ body{
   -o-object-fit: cover;
      object-fit: cover;
 }
-
+.btn-b{
+  padding-top: .7rem !important;
+  padding-bottom: .7rem !important;
+  font-size: 1.2rem !important;
+}
 .main-btn {
   padding: 0.35rem 2.2rem;
   border-radius: 35px;
@@ -264,7 +268,11 @@ section {
   cursor: pointer;
 }
 
-
+header .log{
+  font-size: 1.1rem !important;
+  padding-top: .5rem !important;
+  padding-bottom: .5rem !important;
+}
 
 /*  */
 
@@ -274,7 +282,7 @@ section {
 }
 .top-nav {
   background: var(--main);
-  padding: 0.65rem 0;
+  padding: 0.45rem 0;
   margin-bottom: 1rem;
   color: var(--white);
   font-size: 14px;
@@ -282,17 +290,21 @@ section {
   position: relative;
 }
 .top-nav .search{
-  position: absolute;
-  bottom: -110%;
-  right: 11%;
   background-color:var(--main);
   color:  var(--white) !important;
-  border-radius: 35px;
-  width: 25%;
-  padding: 1rem 1rem;
+  padding: .2rem .8rem;
   border: none;
   box-shadow: none !important;
   z-index: 222;
+  transition: .3s;
+}
+.top-nav .search:focus{
+  border-bottom: 1px solid var(--white) !important;
+  border-radius: unset !important;
+}
+.top-nav .input-group-text:focus .search{
+  border-bottom: 1px solid var(--white) !important;
+  border-radius: unset !important;
 }
 .top-nav .search::-webkit-input-placeholder{
   color:  var(--white) !important;
@@ -455,15 +467,25 @@ header {
   background: linear-gradient(360deg, #f5f6f7, #fff);
   background-size: 100% 80%;
 }
+/* header .banner-hero{
+  padding-left: 3rem;
+} */
 header .banner-hero h2 {
   color: var(--main);
   font-weight: bold;
-  font-size: 28px;
-  line-height: 1.5;
+  font-size: 1.9rem;
+  line-height: 1.7;
+  margin-top: 2.5rem;
+  /* margin-bottom: 1.5rem; */
 }
 header .banner-hero p {
-  margin: 1rem 0;
+  font-size: 1.4rem;
+  margin: 1.5rem 0;
   color: #a1a1a1;
+}
+header .banner-hero .btn{
+  font-size: 1.2rem;
+  padding: .7rem 2rem !important;
 }
 header .hero-img > img {
   border-radius: 365px 365px 0px 0px;
@@ -1219,17 +1241,9 @@ margin: 2rem 0 5rem 0;
 
 .accordion-item {
   color: var(--main);
-  /* background-color: var(--main); */
   border: none;
-  /* border-radius: 42px; */
   margin-bottom: 1.5rem;
 }
-/* .accordion-button:not(.collapsed) {
-  color: var(--main);
-  background-color: var(--background);
-  box-shadow: none;
-  border-radius: 42px;
-} */
 
 .accordion-button:focus {
   z-index: 3;
@@ -1355,7 +1369,7 @@ margin: 2rem 0 5rem 0;
 }
 .who-we .button-group .btn{
   font-size: 1.2rem;
-  padding: .5rem 4rem;
+  padding: .7rem 4rem !important;
   border-radius: 42px;
   background-color: transparent !important;
   color: var(--primary) !important;
@@ -2174,7 +2188,40 @@ gap: .5rem;
 
 /* ================== media query ===============*/
 
+
+@media (max-width: 1060px){
+  .blog .card-header{
+    font-size: .7rem !important;
+  }
+}
+
+
+
+
+
 @media (max-width: 991px){
+  header {
+    background-size: 100% 90%;
+}
+  header .banner-hero h2 {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+header .banner-hero p {
+  font-size: 1rem;
+  margin: 1rem 0 !important;
+}
+  header .banner-hero .btn{
+    font-size: 1.1rem;
+    padding: .5rem 1rem !important;
+  }
+  .blog .card-header .comments{
+    padding: 0 .3rem !important;
+  }
+  .blog .card-header{
+    font-size: .7rem !important;
+  }
   .contacts .contact-info .down-link {
     font-size: .9rem;
 }
@@ -2362,10 +2409,10 @@ gap: .5rem;
     max-height: unset;
 }
 header .contact-info {
-  width: 40%;
+  width: 60%;
 }
 .top-nav .search{
-  width: 40%;
+  width: 100%;
 }
 footer .footer-logo{
  margin-bottom: 2rem;
@@ -2413,6 +2460,20 @@ footer .footer-logo{
 
 
 @media (max-width: 625px){ 
+  .btn-b{
+    padding-top: .6rem !important;
+    padding-bottom: .6rem !important;
+    font-size: 1rem !important;
+  }
+  .services .service {
+    padding: 2rem 0.5rem !important;
+}
+.services .service .service-title {
+  font-size: 1rem;
+}
+.services .service .service-img {
+  width: 80%;
+}
   .form-check-input, .form-check label p {
     font-size: .9rem;
 }
@@ -2517,8 +2578,12 @@ header .button-group .btn{
   font-size: 1.2rem;
 }
   .top-nav .search{
-    width: 60%;
+    width: 100% !important;
   }
+  .contact-info {
+    width: 60% !important;
+    gap: 1rem;
+}
 .logo-footer-cont{
   display: flex;
   justify-content: flex-start;

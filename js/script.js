@@ -9,16 +9,6 @@ else{
 }
 
 
-// ======= search in nav-top ========
-let search_btn = $('#basic-addon2');
-let search_input = $('#search');
-
-search_input.hide();
-
-search_btn.click(function(){
-    search_input.toggle(200);
-});
-
 // ==== navbar toggler ======
 let open_nav = $('#open');
 let close_nav = $('#close');
