@@ -577,7 +577,7 @@ header .partners img {
   transition: .3s;
 }
 
-/* .item::before{
+.package .item::before{
   content: "";
   position: absolute;
   top: -30px;
@@ -588,7 +588,7 @@ header .partners img {
   border-radius: 21px;
   background-color: var(--grey);
   z-index: -1;
-} */
+}
 
 .item.orange::before{
   background-color: var(--primary);
