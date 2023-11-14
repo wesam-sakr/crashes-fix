@@ -114,11 +114,11 @@ window.addEventListener('scroll', change_active);
 
 /*===============================================*/
 
-const kind = document.getElementById('#select-kind');
 
-if(kind != null){
-  $('select').niceSelect();
-}
+  $(document).ready(function() {
+    $('select').niceSelect();
+  });
+
 
 /*==================================================*/
 
