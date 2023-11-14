@@ -1085,20 +1085,26 @@ margin: 2rem 0 5rem 0;
 }
 
 .book-service .form .group .form-control , 
+.book-service .form .group .nice-select ,
 .book-service .form .group .form-select ,
 .contact-us .form .group .form-control{
-  border-radius: 42px;
-  background-color: transparent;
-  border: 1px solid var(--border);
-  font-size: 1.2rem;
+  border-radius: 42px !important;
+  background-color: transparent !important;
+  border: 1px solid var(--border) !important;
+  font-size: 1.2rem !important;
   color: var(--p-grey);
   transition: .3s;
 }
-
+.book-service .nice-select {
+  height: 43px !important;
+  padding-top: 0 !important;
+  line-height: 35px !important;
+}
 .book-service .form .group .form-control:focus ,
+.book-service .form .group .nice-select:focus ,
 .book-service .form .group .form-select:focus ,
 .contact-us .form .group .form-control:focus{
-  border-color: var(--primary);
+  border-color: var(--primary) !important;
   box-shadow: unset;
 }
 
