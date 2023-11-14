@@ -1687,7 +1687,7 @@ margin: 2rem 0 5rem 0;
 }
 .blog .card-header{
   background-color: transparent !important;
-  font-size: 1rem;
+  font-size: small;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1702,11 +1702,13 @@ justify-content: center;
 align-items: center;
 flex-wrap: wrap;
 gap: .5rem;
+flex-grow: 1;
 }
 .blog .card-header .comments{
   border-left: 1px solid #36457695;
   border-right: 1px solid #36457695;
   padding: 0 1.1rem;
+  flex-grow: 2;
 }
 .card-body{
   padding-right: 0 !important;
@@ -1720,7 +1722,6 @@ gap: .5rem;
 }
 .blog .card .card-text{
   color: var(--p-grey);
-  font-size: 1.2rem;
 }
 
 /* ============ single-blog page ================ */
@@ -2072,7 +2073,7 @@ gap: .5rem;
 /* ============ term =========== */
 
 .term .form-check-input:checked[type=radio] {
-  --bs-form-check-bg-image: url('../images/icons/Right.svg') !important;
+  background-image: url('../images/icons/Right.svg') !important;
   display: flex;
   background-size: 95%;
   align-items: center;
@@ -2489,9 +2490,6 @@ footer .footer-logo{
   .blog .card .card-title {
     font-size: 1.2rem;
 }
-  .blog .card .card-text {
-    font-size: .9rem;
-}
   header .banner-hero h2 {
     font-size: 1.2rem;
 
@@ -2580,10 +2578,7 @@ header .button-group .btn{
   .top-nav .search{
     width: 100% !important;
   }
-  .contact-info {
-    width: 60% !important;
-    gap: 1rem;
-}
+
 .logo-footer-cont{
   display: flex;
   justify-content: flex-start;
