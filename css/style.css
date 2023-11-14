@@ -267,6 +267,8 @@ section {
 .unheight{
   height: unset !important;
   max-height: unset !important;
+  background: linear-gradient(360deg, #f5f6f7, #fff 30%);
+  background-size: 100%  80%;
 }
 .unmargin{
   margin: 0 !important;
@@ -566,14 +568,14 @@ header .partners img {
   margin-top: 5rem;
 }
 .package{
-  padding: 0 2rem !important;
+  padding: 0 1rem !important;
 }
 
-.package .item{
+.package .item {
   text-align: center;
   background-color: var(--background);
-  height: 250px;
-  border-radius: 49px;
+  height: 205px;
+  border-radius: 28px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -605,32 +607,32 @@ header .partners img {
   padding: 30px 0 30px 0;
 }
 
-.package-desc{
+.package-desc {
   color: var(--main);
   background-color: var(--lite-bg);
-  font-size: 1.2rem;
   padding: 1.5rem 0;
-  width: calc(100% + 4rem);
+  width: calc(100% + 2rem);
   position: relative;
+  font-weight: bold;
 }
 
-.package-desc::before{
+.package-desc::before {
   content: "";
   position: absolute;
-  top: -32px;
+  top: -24px;
   left: 0;
   border-style: solid;
-  border-width: 0 0 2rem 2rem;
+  border-width: 0 0 1.5rem 1rem;
   border-color: transparent transparent var(--dark-bg) transparent;
 }
-.package-desc::after{
+.package-desc::after {
   content: "";
   position: absolute;
-  top: -32px;
+  top: -24px;
   right: 0;
   border-style: solid;
-  border-width: 0  2rem 2rem 0;
-  border-color: transparent  transparent var(--dark-bg) transparent ;
+  border-width: 0 1rem 1.5rem 0;
+  border-color: transparent transparent var(--dark-bg) transparent;
 }
 .package-desc.orange-before::before ,
 .package-desc.orange-before::after{
@@ -1733,6 +1735,7 @@ flex-grow: 1;
 .blog-container{
   display: flex;
   position: relative;
+  gap: 1rem;
 }
 .single-blog .img{
   height: 500px;
@@ -1761,9 +1764,14 @@ flex-grow: 1;
 .blog aside.nav-left{
   padding-top: 4rem;
 }
+.blog aside.nav-right{
+  background-color: var(--background);
+  border-radius: 20px;
+  padding-top: 2.5rem;
+}
 .blog aside.nav-right h2{
-  margin: 3rem 0 3rem 0;
-  font-size: 1.4rem;
+  margin: 0rem 1rem 1rem 0;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 .blog aside.nav-right a{
@@ -1772,7 +1780,7 @@ flex-grow: 1;
   gap: 1rem;
   padding: 10px 20px;
   color: var(--p-grey) !important;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 .blog aside.nav-right a.active{
   color: var(--main)!important;
@@ -1822,7 +1830,6 @@ flex-grow: 1;
   margin: 1rem;
 }
 .blog .content p{
-  font-size: 1.2rem;
   line-height: 2.2rem;
   color: var(--p-grey);
 }
@@ -1830,7 +1837,7 @@ flex-grow: 1;
 .blog .about-article h3{
   font-size: 1.5rem;
   color: var(--main);
-  margin: 1.5rem 0;
+  margin: 0 0  1.5rem 0;
   font-weight: bold;
 }
 
@@ -1848,9 +1855,9 @@ flex-grow: 1;
   align-items: center;
   gap: .5rem;
 }
-.comment .card-header .user span{
+/* .comment .card-header .user span{
   font-size: 1.3rem;
-}
+} */
 .comment .card-header .time{
   color: var(--primary);
 }
@@ -1909,11 +1916,19 @@ flex-grow: 1;
 }
 /*==========  global for packages pages   ============*/
 
-.term .container , .details .container , .kind .container{
+.term .child , .details .child , .kind .child{
   background-color: var(--background);
-  padding: 2rem;
-  border-radius: 10px;
+  padding: 4rem !important;
+  border-radius: 30px;
   margin-bottom: 1rem;
+  width: 80% !important;
+}
+.term .container , 
+.details .container,
+.kind .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .term .container .sec-title , .details .container .sec-title , .kind .container .sec-title{
   font-size: 1.3rem ;
@@ -1924,17 +1939,15 @@ flex-grow: 1;
   align-items: center;
   
 }
-
 .term .child{
-  width: 60%;
-  margin: 1rem 0;
+  padding: 4rem 7rem !important;
 }
 .term .child .btn{
   padding: .7rem 2rem !important;
   font-size: 1.2rem;
 }
-.term .child .chose{
-  margin-top: 2rem;
+.term .chose{
+  margin-top: .5rem !important;
   margin-bottom: 2rem;
 }
 
@@ -1946,7 +1959,7 @@ flex-grow: 1;
 .details::before{
   position: absolute;
   content: "";
-  width: 70%;
+  width: 50%;
   background-color: var(--main);
   height: 50px;
   border-radius: 24px;
@@ -1960,22 +1973,27 @@ flex-grow: 1;
 }
 .details .sec-title{
   position: relative;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+  padding-bottom: .9rem;
+  border-bottom: 4px solid var(--main);
 }
-.details .sec-title::after{
+/* .details .sec-title::after{
   position: absolute;
   content: "";
-  width: 80%;
+  width: 100%;
   background-color: var(--main);
   height: 4px;
   bottom: -20px;
   right: 0;
   border-radius: 30px;
+} */
+.details .detail{
+  margin-top: 2rem !important;
 }
 .details .detail p {
   color: var(--p-grey);
   font-size: 1.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   margin-right: 2rem;
   padding-bottom: 1rem;
   border-bottom: 1px dashed var(--main);
@@ -1990,7 +2008,7 @@ flex-grow: 1;
   transform: translateY(-50%);
   width: 20px !important;
   height: 3px !important;
-  background-color: var(--primary) !important;
+  background-color: var(--main) !important;
   border-radius: 1px !important;
 }
 
@@ -2000,7 +2018,7 @@ flex-grow: 1;
   width: 10px !important;
   height: 10px !important;
   border-radius: 50% !important;
-  background: var(--primary) !important;
+  background: var(--main) !important;
   top: 40%;
   right: -2rem;
   transform: translateY(-50%);
@@ -2043,7 +2061,8 @@ flex-grow: 1;
     border: solid 1px transparent !important;
     float: right !important;
     font-size: 1rem !important;
-    height: 42px;
+    height: 50px;
+    padding-top: 4px;
     line-height: 40px;
     outline: none;
     position: relative;
@@ -2205,6 +2224,17 @@ flex-grow: 1;
 
 
 @media (max-width: 991px){
+
+  .details::before {
+    width: 75%;
+}
+  .term .child , .details .child , .kind .child{
+    width: 100% !important;
+    padding: 2rem 1rem !important;
+  }
+  .term .child{
+    padding: 2rem 2rem !important;
+  }
   header {
     background-size: 100% 90%;
 }
@@ -2487,8 +2517,11 @@ footer .footer-logo img{
     width: 1.3rem;
 }
   .term .container .sec-title , .details .container .sec-title , .kind .container .sec-title{
-    font-size: 1.2rem ;
+    font-size: 1rem ;
   }
+  .details .detail p {
+    font-size: .9rem;
+}
   .details .sec-title::after{
     width: 100%;
   }
@@ -2567,7 +2600,7 @@ header .button-group .btn{
   padding: 3rem 0.5rem !important;
 }
 .rights{
-  margin: 0 .7rem !important;
+  margin: 0 .7rem 1rem .7rem !important;
 }
 .rights p {
   font-size: .8rem;
