@@ -209,6 +209,13 @@ body{
   width: 50px !important;
   height: 50px !important;
   z-index: 22222;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white) !important;
+  font-size: 1.5rem;
 }
 .whats-app img{
   width: 100% !important;
@@ -298,14 +305,11 @@ header .log{
   z-index: 222;
   transition: .3s;
 }
-.top-nav .search:focus{
+.top-nav .input-group-text:focus-within{
   border-bottom: 1px solid var(--white) !important;
   border-radius: unset !important;
 }
-.top-nav .input-group-text:focus .search{
-  border-bottom: 1px solid var(--white) !important;
-  border-radius: unset !important;
-}
+
 .top-nav .search::-webkit-input-placeholder{
   color:  var(--white) !important;
   
@@ -673,7 +677,7 @@ header .partners img {
   width: 60%;
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
 .services .service .service-img img{
   width: 100%;
@@ -2417,8 +2421,11 @@ header .contact-info {
 }
 footer .footer-logo{
  margin-bottom: 2rem;
+ padding: 0 !important;
 }
-
+footer .footer-logo img{
+  width: 140px;
+}
 .logo-footer-cont{
   display: flex;
   justify-content: center;
@@ -2467,14 +2474,12 @@ footer .footer-logo{
     font-size: 1rem !important;
   }
   .services .service {
-    padding: 2rem 0.5rem !important;
+    padding: 1rem 0.5rem !important;
 }
 .services .service .service-title {
   font-size: 1rem;
 }
-.services .service .service-img {
-  width: 80%;
-}
+
   .form-check-input, .form-check label p {
     font-size: .9rem;
 }
@@ -2549,8 +2554,7 @@ header .button-group .btn{
   padding: 0.75rem 2.5rem;
 }
 .contacts .contact-info .down-link {
-  padding: 0.8rem 0.7rem;
-
+  padding: 0.7rem 0.9rem;
 }
 .contacts .contact-info p {
   font-size: 1.2rem;
