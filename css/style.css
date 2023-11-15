@@ -1420,7 +1420,7 @@ margin: 2rem 0 5rem 0;
   background: url('../images//header-back.png');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 100% 90%;
+  background-size: 100% 95%;
 }
 
 .who-we .hero-img > img {
@@ -1430,7 +1430,7 @@ margin: 2rem 0 5rem 0;
 .who-we .title{
   color: var(--main);
   font-weight: bold;
-  line-height: 2;
+  /* line-height: 2; */
 }
  .s-title{
   font-weight: bold;
@@ -1438,7 +1438,7 @@ margin: 2rem 0 5rem 0;
 }
 .who-we .paragraphs p{
   color: var(--p-grey);
-  line-height: 2;
+  line-height: 1.8;
 }
 .who-we .button-group .btn{
   font-size: 1.2rem;
