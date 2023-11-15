@@ -988,7 +988,7 @@ margin: 2rem 0 5rem 0;
 }
 .single-service .item .caption p{
   color: var(--p-grey);
-  font-size: 1.2rem;
+  line-height: 2;
   margin-bottom: .5rem;
   margin-right: 2rem;
   position: relative;
@@ -996,7 +996,7 @@ margin: 2rem 0 5rem 0;
 .single-service .item .caption p::after{
   content: "";
     position: absolute;
-    top: 50%;
+    top: 50% !important;
     right: -2rem;
     transform: translateY(-50%);
     width: 20px;
@@ -1011,7 +1011,7 @@ margin: 2rem 0 5rem 0;
     height: 10px;
     border-radius: 50%;
     background: var(--primary);
-    top: 50%;
+    top: 50% !important;
     right: -2rem;
     transform: translateY(-50%);
     transition: 0.2s;
@@ -1207,13 +1207,15 @@ margin: 2rem 0 5rem 0;
   background-color: transparent !important;
 }
 
-.single-service .item .caption p::after{
-    top: 13%;
-    transform: translateY(-13%);
+.single-service.roles .item .caption p::after,
+.single-service.policies .item .caption p::after{
+    top: 20% !important;
+    transform: translateY(-20%) !important;
 }
-.single-service .item .caption p::before{
-    top: 13%;
-    transform: translateY(-50%);
+.single-service.roles .item .caption p::before ,
+.single-service.policies .item .caption p::before{
+    top: 20% !important;
+    transform: translateY(-50%) !important;
 }
 
 /* =========== faq ============ */
@@ -1379,7 +1381,7 @@ margin: 2rem 0 5rem 0;
   font-size: 2rem;
   line-height: 2;
 }
-.who-we .s-title{
+ .s-title{
   font-weight: bold;
   line-height: 1.8;
 }
@@ -1750,6 +1752,7 @@ flex-grow: 1;
   display: flex;
   position: relative;
   gap: 1rem;
+  margin-top: 2rem;
 }
 .single-blog .img{
   height: 500px;
@@ -1775,9 +1778,9 @@ flex-grow: 1;
   top: 20px;
   height: 100%;
 }
-.blog aside.nav-left{
+/* .blog aside.nav-left{
   padding-top: 4rem;
-}
+} */
 .blog aside.nav-right{
   background-color: var(--background);
   border-radius: 20px;
@@ -1851,7 +1854,7 @@ flex-grow: 1;
 .blog .about-article h3{
   font-size: 1.5rem;
   color: var(--main);
-  margin: 0 0  1.5rem 0;
+  margin: 1rem 0  1.5rem 0;
   font-weight: bold;
 }
 
@@ -2307,7 +2310,7 @@ header .banner-hero p {
   font-size: 1rem;
 }
   .package-desc {
-    font-size: 1rem;
+    font-size: .9rem;
 }
   .blog aside.nav-right{
     display: none !important;
@@ -2415,9 +2418,9 @@ header .banner-hero p {
   }
   .single-service .in-package ,
   .single-service .out-package{
-    padding-left: .6rem !important;
-    padding-right: .6rem !important;
-    font-size: .9rem;
+    padding-left: .5rem !important;
+    padding-right: .5rem !important;
+    font-size: .8rem !important;
     transition: .3s;
   }
   .services .head p{
@@ -2633,7 +2636,7 @@ header .button-group .btn{
 }
 .single-service .price {
   padding: 0.7rem .7rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
   .top-nav .search{
     width: 100% !important;
