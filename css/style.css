@@ -201,6 +201,39 @@ svg {
 body{
   position: relative !important;
 }
+.dropdown-menu{
+  border: none ;
+  border-radius: 20px;
+  /* overflow: hidden; */
+  margin-top: 1rem !important;
+  position: relative;
+  background-color: var(--white);
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.076);
+}
+.dropdown-menu::before{
+  content: '';
+  position: absolute;
+  top: -.6rem;
+  right: 1.5rem;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 6px 10px 6px;
+  border-color: transparent transparent var(--white) transparent ;
+}
+.dropdown-menu li{
+  padding: .3rem .5rem !important;
+}
+.dropdown-menu .dropdown-item{
+  border-radius: 20px !important;
+}
+.dropdown-menu .dropdown-item.active{
+  background-color: #3645768f !important;
+}
+.dropdown-menu .dropdown-item:focus ,
+.dropdown-menu .dropdown-item:hover{
+  background-color: #3645768f !important;
+}
 .whats-app {
   position: fixed !important;
   bottom: 1rem;
@@ -310,11 +343,26 @@ header .log{
   z-index: 222;
   transition: .3s;
 }
+.top-nav .input-group{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.top-nav .search-btn{
+  position: absolute;
+  left: 0;
+  z-index: 2222;
+  display: none;
+  font-size: .9rem;
+}
+
 .top-nav .input-group-text:focus-within{
   border-bottom: 1px solid var(--white) !important;
   border-radius: unset !important;
 }
-
+.top-nav .input-group-text:focus-within + .search-btn{
+  display: flex !important;
+}
 .top-nav .search::-webkit-input-placeholder{
   color:  var(--white) !important;
   
@@ -2601,13 +2649,13 @@ header .banner-hero p{
     align-items: center !important;
   } */
   .navbar-brand img {
-    width: 50px !important;
+    width: 73px !important;
 }
 .main-btn {
   padding: 0.35rem .9rem;
 }
 header .button-group .btn{
-  font-size: 1rem;
+  font-size: 14px;
 }
 .nav-tabs .nav-link {
   padding: 0.75rem 2.5rem;
