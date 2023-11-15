@@ -1416,11 +1416,11 @@ margin: 2rem 0 5rem 0;
 .who-we {
   height: 90vh;
   max-height: 785px;
-  overflow: hidden;
+  /* overflow: hidden; */
   background: url('../images//header-back.png');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 100% 85%;
+  background-size: 100% 90%;
 }
 
 .who-we .hero-img > img {
