@@ -131,34 +131,34 @@
   <section class=" profile user-profile book-service py-5 unmargin">
     <div class="container">
       <div class="row gy-3">
-        <div class="col-md-4 ">
+        <div class="col-md-3 ">
           <div class="nav flex-column nav-pills d-flex  align-items-center" id="v-pills-tab" role="tablist"
             aria-orientation="vertical">
             <div class="main">
               <div class="profile-photo " id="profile-photo">
                 <img src="images/user.png" alt="" id="photo">
                 <input type="file" class="" accept="image/*" id="file">
+                <i class="fa-solid fa-camera camera" id="camera"></i>
+                <button class="fa-solid fa-check accept" id="accept"></button>
               </div>
-              <i class="fa-solid fa-camera camera" id="camera"></i>
-              <button class="fa-solid fa-check accept" id="accept"></button>
             </div>
 
             <div class="user-details">
               <h3 class="name">USERNAME</h3>
               <p class="email">admin@gmail.com</p>
             </div>
-            <button class=" d-flex align-items-start gap-3 nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+            <button class=" d-flex align-items-center gap-3 nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
               data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
               aria-selected="true"><i class="fa-regular fa-user"></i>
-              <span>بياناتي</span>
+              <span>الملف الشخصي</span>
             </button>
-            <button class="nav-link d-flex align-items-start gap-3" id="v-pills-profile-tab" data-bs-toggle="pill"
+            <button class="nav-link d-flex align-items-center gap-3" id="v-pills-profile-tab" data-bs-toggle="pill"
               data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
               aria-selected="false">
               <i class="fa-solid fa-unlock-keyhole"></i>
               <span>تعديل كلمة المرور</span>
             </button>
-            <button class="nav-link d-flex align-items-start gap-3" id="v-pills-settings-tab" data-bs-toggle="pill"
+            <button class="nav-link d-flex align-items-center gap-3" id="v-pills-settings-tab" data-bs-toggle="pill"
               data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
               aria-selected="false">
               <i class="fa-solid fa-box-archive"></i>
@@ -168,62 +168,66 @@
                 class="fa-solid fa-arrow-right-from-bracket"></i>تسجيل خروج</a>
           </div>
         </div>
-        <div class="col-md-8 ">
+        <div class="col-md-9 ">
           <div class="tab-content" id="v-pills-tabContent">
 
             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
               tabindex="0">
-              <form action="" class="form">
-                <div class="row g-3">
-                  <div class="col-md-12 group">
-                    <label for="name" class="form-label name">الاسم</label>
-                    <input type="text" class="form-control" id="name" placeholder="اسم المستخدم">
-                  </div>
+              <div class="tab-background">
+                <form action="" class="form">
+                  <div class="row g-3">
+                    <div class="col-md-12 group">
+                      <label for="name" class="form-label name">الاسم</label>
+                      <input type="text" class="form-control" id="name" placeholder="اسم المستخدم">
+                    </div>
 
-                  <div class="col-md-12 group">
-                    <label for="email" class="form-label email">البريد الإلكتروني</label>
-                    <input type="email" class="form-control" id="email" placeholder="البريد الالكتروني">
-                  </div>
+                    <div class="col-md-12 group">
+                      <label for="email" class="form-label email">البريد الإلكتروني</label>
+                      <input type="email" class="form-control" id="email" placeholder="البريد الالكتروني">
+                    </div>
 
-                  <div class="col-md-12 group">
-                    <label for="phone" class="form-label phone">رقم الجوال</label>
-                    <input type="number" class="form-control" id="phone" placeholder="رقم الجوال">
+                    <div class="col-md-12 group">
+                      <label for="phone" class="form-label phone">رقم الجوال</label>
+                      <input type="tel" class="form-control" id="phone" placeholder="رقم الجوال">
+                    </div>
+                    <div class="col-md-12 group">
+                      <button class="btn main-btn primary" id="edit-main-info">حفظ</button>
+                    </div>
                   </div>
-                  <div class="col-md-12 group">
-                    <button class="btn main-btn primary" id="edit-main-info">حفظ</button>
-                  </div>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
 
 
             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
               tabindex="0">
-              <form action="" class="form">
-                <div class="row g-3">
-                  <div class="col-md-12 group">
-                    <label for="recent-password" class="form-label">كلمة المرور الحالية</label>
-                    <input type="password" class="form-control" id="recent-password" placeholder="كلمة المرور الحالية">
+              <div class="tab-background">
+                <form action="" class="form">
+                  <div class="row g-3">
+                    <div class="col-md-12 group">
+                      <label for="recent-password" class="form-label">كلمة المرور الحالية</label>
+                      <input type="password" class="form-control" id="recent-password">
+                    </div>
+
+                    <div class="col-md-12 group">
+                      <label for="new-password" class="form-label">كلمة مرور جديدة</label>
+                      <input type="password" class="form-control" id="new-password">
+                    </div>
+
+                    <div class="col-md-12 group">
+                      <label for="re-password" class="form-label">أعد كتابة كلمة المرور</label>
+                      <input type="password" class="form-control" id="re-password">
+                    </div>
+                    <div class="col-md-12 group">
+                      <a href="forget-pass.html" class="forget-pass">هل نسيت كلمة المرور؟</a>
+                    </div>
+                    <div class="col-md-12 group">
+                      <button class="btn main-btn primary" id="edit-password">حفظ</button>
+                    </div>
                   </div>
 
-                  <div class="col-md-12 group">
-                    <label for="new-password" class="form-label">كلمة مرور جديدة</label>
-                    <input type="password" class="form-control" id="new-password" placeholder="كلمة مرور جديدة">
-                  </div>
-
-                  <div class="col-md-12 group">
-                    <label for="re-password" class="form-label">أعد كتابة كلمة المرور</label>
-                    <input type="password" class="form-control" id="re-password" placeholder="أعد كتابة كلمة المرور">
-                  </div>
-                  <div class="col-md-12 group">
-                    <a href="#" class="forget-pass">هل نسيت كلمة المرور؟</a>
-                  </div>
-                  <div class="col-md-12 group">
-                    <button class="btn main-btn primary" id="edit-password">حفظ</button>
-                  </div>
-                </div>
-
-              </form>
+                </form>
+              </div>
 
             </div>
             <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"

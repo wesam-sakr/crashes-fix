@@ -18,7 +18,6 @@
   padding-right: 30px;
   position: relative;
   text-align: left !important;
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -41,25 +40,16 @@
     position: absolute;
     right: 12px;
     top: 50%;
-    -webkit-transform-origin: 66% 66%;
-        -ms-transform-origin: 66% 66%;
-            transform-origin: 66% 66%;
-    -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
-    -webkit-transition: all 0.15s ease-in-out;
+    transform-origin: 66% 66%;
+    transform: rotate(45deg);
     transition: all 0.15s ease-in-out;
     width: 5px; }
   .nice-select.open:after {
-    -webkit-transform: rotate(-135deg);
-        -ms-transform: rotate(-135deg);
-            transform: rotate(-135deg); }
+    transform: rotate(-135deg); }
   .nice-select.open .list {
     opacity: 1;
     pointer-events: auto;
-    -webkit-transform: scale(1) translateY(0);
-        -ms-transform: scale(1) translateY(0);
-            transform: scale(1) translateY(0); }
+    transform: scale(1) translateY(0); }
   .nice-select.disabled {
     border-color: #ededed;
     color: #999;
@@ -99,13 +89,8 @@
     position: absolute;
     top: 100%;
     left: 0;
-    -webkit-transform-origin: 50% 0;
-        -ms-transform-origin: 50% 0;
-            transform-origin: 50% 0;
-    -webkit-transform: scale(0.75) translateY(-21px);
-        -ms-transform: scale(0.75) translateY(-21px);
-            transform: scale(0.75) translateY(-21px);
-    -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    transform-origin: 50% 0;
+    transform: scale(0.75) translateY(-21px);
     transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
     z-index: 9; }
     .nice-select .list:hover .option:not(:hover) {
@@ -120,7 +105,6 @@
     padding-left: 18px;
     padding-right: 29px;
     text-align: left;
-    -webkit-transition: all 0.2s;
     transition: all 0.2s; }
     .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
       background-color: #f6f6f6; }

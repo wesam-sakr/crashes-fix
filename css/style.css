@@ -198,7 +198,16 @@ svg {
   inset: 0;
   z-index: 1;
 }
+[type=email], [type=number], [type=tel], [type=url] {
+  direction: rtl !important;
+}
+.tab-background{
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 1rem 4rem;
+}
 body{
+  background-color: #FCFCFC;
   position: relative !important;
 }
 .dropdown-menu{
@@ -234,6 +243,9 @@ body{
 .dropdown-menu .dropdown-item:hover{
   background-color: #3645768f !important;
 }
+.nice-select .option {
+  text-align: right !important;
+}
 .whats-app {
   position: fixed !important;
   bottom: 1rem;
@@ -262,7 +274,7 @@ body{
   font-size: 1.2rem !important;
 }
 .main-btn {
-  padding: 0.35rem 2.2rem;
+  padding: 0.5rem 2.2rem;
   border-radius: 35px;
   font-size: 14px;
   color: var(--white) !important;
@@ -270,6 +282,23 @@ body{
 }
 .main-btn.primary {
   background: var(--primary) !important;
+}
+.form-control::-webkit-input-placeholder{
+  font-size: 1.1rem;
+  opacity: .6;
+  /* color: var(--label-on); */
+}
+.form-control::-moz-placeholder{
+  font-size: .8rem;
+}
+.form-control:-ms-input-placeholder{
+  font-size: .8rem;
+}
+.form-control::-ms-input-placeholder{
+  font-size: .8rem;
+}
+.form-control::placeholder{
+  font-size: .8rem;
 }
 section {
   margin-top: 80px;
@@ -1458,22 +1487,22 @@ margin: 2rem 0 5rem 0;
 /* ============== profile ================= */
 
 .user-profile .profile-photo {
-  width: 130px;
-  height: 130px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   border: 1px solid var(--p-color);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 .user-profile .main{
   position: relative;
 }
 .user-profile .main .camera{
   position: absolute;
-  bottom: 18%;
+  bottom: -7%;
   right: 0px;
-  transform: translateX(-18%);
+  transform: translateX(-7%);
   width: 40px;
   height: 40px;
   background-color: var(--main);
@@ -1488,9 +1517,9 @@ margin: 2rem 0 5rem 0;
 }
 .user-profile .main .accept{
   position: absolute;
-  bottom: 18%;
+  bottom: -7%;
   left: 0px;
-  transform: translateX(18%);
+  transform: translateX(-7%);
   width: 40px;
   height: 40px;
   background-color: var(--main);
@@ -1533,14 +1562,14 @@ margin: 2rem 0 5rem 0;
 
 .profile .user-details{
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--dark-bg);
+  border-bottom: 1px solid rgba(54, 69, 118, 0.171);
   margin-bottom: 2rem;
 }
 
 .profile .nav{
   padding: 1.5rem 0;
   background-color: var(--background);
-  width: 75%;
+  /* width: 75%; */
   border-radius: 10px;
 }
 .profile .nav .logout{
@@ -1554,11 +1583,11 @@ margin: 2rem 0 5rem 0;
   text-align: center;
 }
 
-.profile .nav .user-details h3{
-  color: var(--main);
-  font-size: 1.2rem;
+.profile .nav .user-details h3 {
+  color: #6D6D6D;
+  font-size: 1rem;
   font-weight: bold;
-  margin-bottom: .8rem;
+  margin-bottom: 0.5rem;
 }
 
 .profile .nav .user-details p{
@@ -1569,16 +1598,22 @@ margin: 2rem 0 5rem 0;
 .profile .nav-pills .nav-link {
   width: 100%;
   margin-bottom: 1rem ;
-  font-size: 1.1rem;
-  font-weight: bold;
+  /* font-size: 1.1rem; */
+  /* font-weight: bold; */
   color: var(--gray-color);
   padding-right: 2rem;
   position: relative;
 }
 
-.profile .nav-pills .nav-link.active{
-  background-color: var(--accordion);
-  color: var(--main);
+.profile .nav-pills .nav-link.active {
+  background-color: #2777b217;
+  color: #1C608D;
+}
+.profile label{
+  color: #364576 !important;
+}
+.profile .forget-pass{
+  color: #000 !important;
 }
 .profile .nav-pills .nav-link.active::after{
   content: "";
