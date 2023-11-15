@@ -2290,7 +2290,11 @@ flex-grow: 1;
 
 
 @media (max-width: 991px){
-  
+  .header-hero .happy-clients {
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+}
   .happy-clients {
     top: 88%;
     left: 50%;
@@ -2500,7 +2504,7 @@ header .banner-hero p {
     right: -100% !important;
     background-color: var(--white);
     height: 100vh;
-    width: 80%;
+    width: 40%;
     transition: .3s;
     z-index: 222222222 !important;
   }
@@ -2571,6 +2575,9 @@ footer .footer-logo img{
 
 
 @media (max-width: 625px){ 
+    .navbar-collapse{
+    width: 80%;
+  }
   .btn-b{
     padding-top: .6rem !important;
     padding-bottom: .6rem !important;
