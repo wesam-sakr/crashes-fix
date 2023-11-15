@@ -1650,22 +1650,20 @@ margin: 2rem 0 5rem 0;
   gap: 1rem;
   width: 65%;
   background-color: var(--background);
-  padding: 1.5rem 2rem;
-  border-radius: 49px;
+  padding: 2rem;
+  border-radius: 39px;
   margin-top: 1.5rem;
-}
-.profile .packages .info h4:nth-child(2){
-  margin: .8rem 0;
 }
 .profile .packages .info .kind{
   color: var(--primary);
 }
 .profile .packages .info .subscribe{
+  margin: 1.4rem 0;  
   color: var(--main);
 }
 .profile .packages .info .remain{
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 1.8rem;
 }
 .profile .packages .img{
   width: 150px;
