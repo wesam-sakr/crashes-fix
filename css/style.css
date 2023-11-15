@@ -1684,7 +1684,7 @@ margin: 2rem 0 5rem 0;
 
 .login {
   height: 100vh;
-  max-height: 100vh;
+  min-height: 100vh;
   /* overflow: hidden; */
   position: relative;
   background: linear-gradient(360deg, #364576 30%, transparent 30%);
