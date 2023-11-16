@@ -1685,7 +1685,6 @@ margin: 2rem 0 5rem 0;
 .login {
   height: 100%;
   min-height: 100vh;
-  /* overflow: hidden; */
   position: relative;
   background: linear-gradient(360deg, #364576 30%, transparent 30%);
 }
@@ -2334,6 +2333,9 @@ flex-grow: 1;
 
 
 @media (max-width: 991px){
+  .tab-background {
+    padding: 1rem 2rem;
+}
   .back-f-btn {
     top: 2rem;
     left: 2rem;
@@ -2623,6 +2625,9 @@ footer .footer-logo img{
 
 
 @media (max-width: 625px){ 
+  .tab-background {
+    padding: 1rem .5rem;
+}
   .back-f-btn {
     top: 1rem;
     left: 1rem;
